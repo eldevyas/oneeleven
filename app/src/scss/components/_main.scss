@@ -1,0 +1,96 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    background-color: transparent;
+    .container {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 100Px;
+        .Text {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            h1 {
+                font-size: 40px;
+                font-weight: bold;
+                span {
+                    color: $secondary;
+                }
+            }
+            p {
+                font-size: 25px;
+                font-weight: medium;
+                color: rgb(100, 100, 100);
+                width: 60%;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+        .Keywords {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            input[type="text"] {
+                border-radius: 10px;
+                background-color: rgba(100, 100, 100, 0.45);
+                width: 80%;
+                height: 60px;
+                padding: 10px 30px;
+                font-size: 18px;
+                border: none;
+                color: #fff;
+                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.25);
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+                &:hover {
+                    border: none;
+                    outline: none;
+                    border: 5px solid rgb(136, 136, 136);
+                    padding: 10px 25px;
+                }
+            }
+            button {
+                width: 19%;
+                height: 60px;
+                border: none;
+                border-radius: 10px;
+                background-color: $secondary;
+                color: #fff;
+                cursor: pointer;
+                font-size: 18px;
+                font-weight: bold;
+                box-shadow: 0px 0px 30px rgba(160, 0, 255, 0.75);
+                transition: transform 0.5s ease-in-out;
+                &:active {
+                    border: none;
+                    outline: none;
+                    transform: scale(0.95);
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                }
+                &:hover {
+                    filter: brightness(0.9);
+                    border: 5px solid rebeccapurple;
+                }
+            }
+        }
+    }
+}

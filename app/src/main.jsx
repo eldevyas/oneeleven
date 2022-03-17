@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './dist/index.min.css'
+import './dist/index.css'
 import App from './App'
 
 ReactDOM.render(

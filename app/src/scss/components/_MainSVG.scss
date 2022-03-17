@@ -1,0 +1,30 @@
+.MainSVG {
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    .Background {
+        width: 100%;
+        height: auto;
+        #background {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    #Oval {
+        position: absolute;
+        z-index: 10;
+        top: -160px;
+        left: 25px;
+        width: 110%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
