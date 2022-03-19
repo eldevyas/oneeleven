@@ -1,7 +1,8 @@
-.MainSVG {
-    height: auto;
+.MainBackground {
+    position: relative;
+    height: 200vh;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -10,21 +11,49 @@
     .Background {
         width: 100%;
         height: auto;
-        #background {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-    #Oval {
-        position: absolute;
-        z-index: 10;
-        top: -160px;
-        left: 25px;
-        width: 110%;
-        height: auto;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        * {
+            position: absolute;
+        }
+        .Rectangle {
+            justify-self: flex-start;
+            align-items: flex-start;
+            position: relative;
+        }
+        .Center {
+            width: 50vw;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            * {
+                object-fit: contain;
+            }
+            .Rectangle1 {
+                width: 100%;
+                height: 100%;
+            }
+            .Rectangle2 {
+                width: 80%;
+                height: 80%;
+            }
+            .Rectangle3 {
+                width: 80%;
+                height: 80%;
+            }
+            .Rectangle4 {
+                width: 80%;
+                height: 80%;
+            }
+            ;
+        }
+        .Random {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
     }
 }
