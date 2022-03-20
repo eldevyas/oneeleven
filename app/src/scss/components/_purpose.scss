@@ -163,14 +163,73 @@
                     padding-bottom: 25%;
                     background-image: url('src/assets/img/Companies/Spotify.png');
                     transform: translate(0% , -135%);
-                    animation: Spin 15s linear infinite;
+                    animation: Spin1 25s ease-in-out infinite;
 
-                    @keyframes Spin {
-                        from {
-                            transform: translate(0% , -135%) rotate(0deg);
+                    @keyframes Spin1 {
+                        0% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
                         }
-                        to {
-                            transform: translate(0% , -135%) rotate(360deg);
+                        10% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+                        20%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+                        30%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+                        40%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        50%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        60%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        70%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        80%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        100% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
                         }
                     }
                 }
@@ -181,6 +240,77 @@
                     padding-bottom: 15%;
                     background-image: url('src/assets/img/Companies/Bitcoin.png');
                     transform: translate(135% , -135%);
+
+                    animation: Spin2 25s ease-in-out infinite;
+
+                    @keyframes Spin2 {
+                        0% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+                        10%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+                        20%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+                        30%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        40%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        50%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        60%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        70%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        80% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        100% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+                    }
                 }
                 .Binance {
                     visibility: visible;
@@ -190,6 +320,79 @@
                     background-image: url('src/assets/img/Companies/Binance.png');
                     background-size: 100%;
                     transform: translate(165% , -0%);
+
+                    animation: Spin3 25s ease-in-out infinite;
+
+                    @keyframes Spin3 {
+                        
+                        0%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+                        10%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+                        20%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        30%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        40%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        50%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        60%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        70% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        80% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        100%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+                    }
                 }
                 .Fiverr {
                     visibility: visible;
@@ -199,6 +402,80 @@
                     background-image: url('src/assets/img/Companies/Fiverr.png');
                     background-size: 80%;
                     transform: translate(165% , 135%);
+
+                    animation: Spin4 25s ease-in-out infinite;
+
+                    @keyframes Spin4 {
+                        
+                        0%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+                        10%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        20%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        30%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        40%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        50%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        60% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        70% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        80%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        100%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+                    }
                 }
                 .Facebook {
                     visibility: visible;
@@ -208,6 +485,80 @@
                     background-image: url('src/assets/img/Companies/Facebook.png');
                     background-size: 80%;
                     transform: translate(30% , 150%);
+                    animation: Spin5 25s ease-in-out infinite;
+
+                    @keyframes Spin5 {
+                        
+                        0%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        10%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        20%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        30%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        40%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        50% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        60% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        70%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        80%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+
+                        100%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+                    }
                 }
 
                 .Meta {
@@ -218,6 +569,82 @@
                     background-image: url('src/assets/img/Companies/Meta.png');
                     background-size: 80%;
                     transform: translate(-90% , 190%);
+
+                    animation: Spin6 25s ease-in-out infinite;
+
+                    @keyframes Spin6 {
+                        
+                        0%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        10%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        20%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        30%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        40% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        50% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        60%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        70%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+
+                        80%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        100%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                    }
                 }
 
                 .IQ-Option {
@@ -228,6 +655,83 @@
                     background-image: url('src/assets/img/Companies/IQ-Option.png');
                     background-size: 80%;
                     transform: translate(-140% , 60%);
+
+                    animation: Spin7 25s ease-in-out infinite;
+
+                    @keyframes Spin7 {
+                        
+
+                        0%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        10%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        20%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        30% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        40% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        50%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        60%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+
+                        70%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        80%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        100%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                    }
                 }
 
                 .Instagram {
@@ -238,6 +742,84 @@
                     background-image: url('src/assets/img/Companies/Instagram.png');
                     background-size: 80%;
                     transform: translate(-190% , -50%);
+
+                    animation: Spin8 25s ease-in-out infinite;
+
+                    @keyframes Spin8 {
+                        
+
+
+                        0%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        10%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        20% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        30% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        40%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        50%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+
+                        60%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        70%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        80%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        100%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                    }
                 }
 
                 .Airbnb {
@@ -248,6 +830,82 @@
                     background-image: url('src/assets/img/Companies/Airbnb.png');
                     background-size: 80%;
                     transform: translate(-120% , -140%);
+
+                    animation: Spin9 25s ease-in-out infinite;
+
+                    @keyframes Spin9 {
+                        
+                        0%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                        10% { /*-Spotify-*/
+                            transform: translate(0% , -135%);
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                        }
+
+                        20% { /*-Bitcoin-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(135% , -135%);
+                        }
+
+                        30%{ /*-Binance-*/
+                            width: 20%;
+                            height: auto;
+                            padding-bottom: 20%;
+                            transform: translate(165% , -0%);
+                        }
+
+                        40%{ /*-Fiverr-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(165% , 135%);
+                        }
+
+                        50%{ /*-Facebook-*/
+                            width: 25%;
+                            height: auto;
+                            padding-bottom: 25%;
+                            transform: translate(30% , 150%);
+                        }
+
+                        60%{ /*-Meta-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-90% , 190%);
+                        }
+
+                        70%{ /*-IQ-Option-*/
+                            width: 22.5%;
+                            height: auto;
+                            padding-bottom: 22.5%;
+                            transform: translate(-140% , 60%);
+                        }
+
+                        80%{ /*-Instagram-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-190% , -50%);
+                        }
+
+                        100%{ /*-Airbnb-*/
+                            width: 15%;
+                            height: auto;
+                            padding-bottom: 15%;
+                            transform: translate(-120% , -140%);
+                        }
+
+                    }
                 }
             }
         }
