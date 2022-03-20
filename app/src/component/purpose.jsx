@@ -3,6 +3,8 @@ import React from 'react';
 const Texture = () => {
     return (
         <div className="Texture">
+            <div className="Oval O-2"></div>
+            <div className="Oval O-1"></div>
             <div className="Oval O1"></div>
             <div className="Oval O2"></div>
             <div className="Oval O3"></div>
@@ -52,6 +54,7 @@ export default function Purpose(){
         <div className="Purpose">
             <Texture/>
             <Text/>
+            <Companies/>
         </div>
     )
 }

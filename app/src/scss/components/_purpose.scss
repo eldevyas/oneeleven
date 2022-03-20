@@ -27,40 +27,68 @@
             z-index: -1;
             .Oval {
                 position: absolute;
-                height: 100vw;
-                width: 100vw;
-                left: 10vw;
                 border-radius: 50%;
                 background-color: #000;
-                opacity: 0.025;
+                filter: invert(0);
+                transform: scale(0.75) translateX(30vw);
+                z-index: 1 !important;
+            }
+            .O-2 {
+                position: absolute;
+                width: 190vw;
+                height: 190vw;
+                background-color: #000;
+                border-radius: 50%;
+                opacity: 0.04;
+            }
+            .O-1 {
+                position: absolute;
+                width: 170vw;
+                height: 170vw;
+                background-color: #000;
+                border-radius: 50%;
+                opacity: 0.05;
             }
             .O1 {
-                height: 100vw;
-                width: 100vw;
+                height: 150vw;
+                width: 150vw;
+                opacity: 0.06;
+                background-color: #000;
             }
             .O2 {
-                height: 90vw;
-                width: 90vw;
+                height: 130vw;
+                width: 130vw;
+                opacity: 0.1;
+                background-color: #fff;
             }
             .O3 {
-                height: 80vw;
-                width: 80vw;
+                height: 110vw;
+                width: 110vw;
+                opacity: 0.2;
+                background-color: #fff;
             }
             .O4 {
-                height: 70vw;
-                width: 70vw;
+                height: 90vw;
+                width: 90vw;
+                opacity: 0.3;
+                background-color: #fff;
             }
             .O5 {
-                height: 60vw;
-                width: 60vw;
+                height: 70vw;
+                width: 70w;
+                opacity: 0.4;
+                background-color: #fff;
             }
             .O6 {
                 height: 50vw;
                 width: 50vw;
+                opacity: 0.5;
+                transform: translateX(16vw) scale(0.75);
+                background-color: #fff;
             }
         }
         .Text {
-            width: 50%;
+            width: 40%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -77,6 +105,92 @@
                 width: 100%;
                 color: $light-gray;
                 margin-bottom: 10px;
+            }
+        }
+        .Companies {
+            position: relative;
+            width: 60%;
+            height: 125%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .Center {
+                width: 40%;
+                height: 43%;
+                background-color: transparent;
+                z-index: 2;
+                .Company {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    background-image: url('src/assets/img/Companies/Google.png');
+                    background-size: 80%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            .Around {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                .Company {
+                    position: absolute;
+                    width: 10%;
+                    height: 10%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    background-size: 80%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    visibility: hidden;
+                    background-size: 80%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .Spotify {
+                    visibility: visible;
+                    width: 25%;
+                    height: 25%;
+                    left: 35%;
+                    background-image: url('src/assets/img/Companies/Spotify.png');
+                }
+                .Bitcoin {
+                    visibility: visible;
+                    width: 15%;
+                    height: 15%;
+                    left: 60%;
+                    top: 15%;
+                    background-image: url('src/assets/img/Companies/Bitcoin.png');
+                }
+                .Binance {
+                    visibility: visible;
+                    width: 20%;
+                    height: 20%;
+                    left: 72%;
+                    top: 30%;
+                    background-image: url('src/assets/img/Companies/Binance.png');
+                    background-size: 100%;
+                }
+                .Fiverr {
+                    visibility: visible;
+                    width: 15%;
+                    height: 15%;
+                    left: 70%;
+                    top: 55%;
+                    background-image: url('src/assets/img/Companies/Fiverr.png');
+                    background-size: 80%;
+                }
+                .Facebook {
+                    visibility: visible;
+                    width: 15%;
+                    height: 15%;
+                    left: 70%;
+                    top: 55%;
+                    background-image: url('src/assets/img/Companies/Facebook.png');
+                    background-size: 80%;
+                }
             }
         }
     }
