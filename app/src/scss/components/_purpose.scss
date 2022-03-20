@@ -14,7 +14,7 @@
         height: 500px;
         .Texture {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
             position: absolute;
             left: 50%;
@@ -27,9 +27,9 @@
             z-index: -1;
             .Oval {
                 position: absolute;
-                right: -10vw;
                 height: 100vw;
                 width: 100vw;
+                left: 10vw;
                 border-radius: 50%;
                 background-color: #000;
                 opacity: 0.025;
@@ -62,8 +62,22 @@
         .Text {
             width: 50%;
             height: 100%;
-            border: 1px solid #000;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .Title {
+                width: 100%;
+                color: $secondary;
+                font-weight: bold;
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            .Description {
+                width: 100%;
+                color: $light-gray;
+                margin-bottom: 10px;
+            }
         }
     }
 }

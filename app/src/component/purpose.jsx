@@ -24,6 +24,27 @@ const Text = () => {
     )
 }
 
+const Companies = () => {
+    return(
+        <div className='Companies'>
+            <div className='Center'>
+                <div className='Company Google'></div>
+            </div>
+            <div className='Around'>
+                <div className='Company Spotify'></div>
+                <div className='Company Bitcoin'></div>
+                <div className='Company Binance'></div>
+                <div className='Company Fiverr'></div>
+                <div className='Company Facebook'></div>
+                <div className='Company Meta'></div>
+                <div className='Company IQ-Option'></div>
+                <div className='Company Instagram'></div>
+                <div className='Company Airbnb'></div>
+            </div>
+        </div>
+    )
+}
+
 
 
 export default function Purpose(){
