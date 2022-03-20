@@ -5,6 +5,7 @@ import Main from './component/main'
 import MainBackground from './component/mainBackground';
 import Options from './component/options'
 import Purpose from './component/purpose'
+import Services from './component/services'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +20,7 @@ function App() {
       <div className="Content">
         <Options/>
         <Purpose/>
+        <Services/>
       </div>
     </div>
   )
