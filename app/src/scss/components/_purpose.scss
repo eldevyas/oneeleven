@@ -121,13 +121,15 @@
                 z-index: 2;
                 .Company {
                     width: 100%;
-                    height: 100%;
+                    height: auto;
+                    padding-bottom: 100%;
                     border-radius: 50%;
                     background-color: #fff;
                     background-image: url('src/assets/img/Companies/Google.png');
                     background-size: 80%;
                     background-repeat: no-repeat;
                     background-position: center;
+                    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
                 }
             }
             .Around {
@@ -148,18 +150,23 @@
                     background-size: 80%;
                     background-repeat: no-repeat;
                     background-position: center;
+                    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+                    
                 }
                 .Spotify {
                     visibility: visible;
                     width: 25%;
-                    height: 25%;
+                    height: auto;
+                    padding-bottom: 25%;
                     left: 35%;
+                    top: -5%;
                     background-image: url('src/assets/img/Companies/Spotify.png');
                 }
                 .Bitcoin {
                     visibility: visible;
                     width: 15%;
-                    height: 15%;
+                    height: auto;
+                    padding-bottom: 15%;
                     left: 60%;
                     top: 15%;
                     background-image: url('src/assets/img/Companies/Bitcoin.png');
@@ -167,7 +174,8 @@
                 .Binance {
                     visibility: visible;
                     width: 20%;
-                    height: 20%;
+                    height: auto;
+                    padding-bottom: 20%;
                     left: 72%;
                     top: 30%;
                     background-image: url('src/assets/img/Companies/Binance.png');
@@ -176,19 +184,43 @@
                 .Fiverr {
                     visibility: visible;
                     width: 15%;
-                    height: 15%;
+                    height: auto;
+                    padding-bottom: 15%;
                     left: 70%;
-                    top: 55%;
+                    top: 60%;
                     background-image: url('src/assets/img/Companies/Fiverr.png');
                     background-size: 80%;
                 }
                 .Facebook {
                     visibility: visible;
-                    width: 15%;
-                    height: 15%;
-                    left: 70%;
-                    top: 55%;
+                    width: 25%;
+                    height: auto;
+                    padding-bottom: 25%;
+                    left: 50%;
+                    top: 80%;
                     background-image: url('src/assets/img/Companies/Facebook.png');
+                    background-size: 80%;
+                }
+
+                .Meta {
+                    visibility: visible;
+                    width: 15%;
+                    height: auto;
+                    padding-bottom: 15%;
+                    left: 30%;
+                    top: 80%;
+                    background-image: url('src/assets/img/Companies/Meta.png');
+                    background-size: 80%;
+                }
+
+                .IQ-Option {
+                    visibility: visible;
+                    width: 22.5%;
+                    height: auto;
+                    padding-bottom: 22.5%;
+                    left: 7.5%;
+                    top: 55%;
+                    background-image: url('src/assets/img/Companies/IQ-Option.png');
                     background-size: 80%;
                 }
             }
