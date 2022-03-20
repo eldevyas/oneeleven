@@ -1,0 +1,69 @@
+.Content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    .Purpose {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        height: 500px;
+        .Texture {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+            height: 500px;
+            background-color: #F4EDFF;
+            Overflow: hidden;
+            z-index: -1;
+            .Oval {
+                position: absolute;
+                right: -10vw;
+                height: 100vw;
+                width: 100vw;
+                border-radius: 50%;
+                background-color: #000;
+                opacity: 0.025;
+            }
+            .O1 {
+                height: 100vw;
+                width: 100vw;
+            }
+            .O2 {
+                height: 90vw;
+                width: 90vw;
+            }
+            .O3 {
+                height: 80vw;
+                width: 80vw;
+            }
+            .O4 {
+                height: 70vw;
+                width: 70vw;
+            }
+            .O5 {
+                height: 60vw;
+                width: 60vw;
+            }
+            .O6 {
+                height: 50vw;
+                width: 50vw;
+            }
+        }
+        .Text {
+            width: 50%;
+            height: 100%;
+            border: 1px solid #000;
+            display: flex;
+        }
+    }
+}

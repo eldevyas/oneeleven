@@ -1,20 +1,20 @@
 .MainBackground {
     position: relative;
-    height: 200vh;
     width: 100%;
-    background-color: transparent;
+    height: 140vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     overflow: hidden;
+    background-color: transparent;
     .Background {
         width: 100%;
-        height: auto;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #000;
         * {
             position: absolute;
         }
@@ -22,38 +22,278 @@
             justify-self: flex-start;
             align-items: flex-start;
             position: relative;
+            background-color: #000;
         }
         .Center {
-            width: 50vw;
-            height: 30vh;
+            transform: translateY(-30vh);
+            width: 65%;
+            height: 40vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: transparent;
             * {
                 object-fit: contain;
+                background-color: white;
+                opacity: 0.035;
             }
             .Rectangle1 {
                 width: 100%;
-                height: 100%;
+                height: 0%;
+                padding-bottom: 45%;
+                border-radius: 120px;
+                animation: Resize 2s ease infinite 400ms;
             }
             .Rectangle2 {
                 width: 80%;
-                height: 80%;
+                height: 0%;
+                padding-bottom: 35%;
+                border-radius: 100px;
+                animation: Resize 3s ease infinite 300ms;
             }
             .Rectangle3 {
-                width: 80%;
-                height: 80%;
+                width: 60%;
+                height: 0%;
+                padding-bottom: 25%;
+                border-radius: 80px;
+                animation: Resize 4s ease infinite 200ms;
             }
             .Rectangle4 {
-                width: 80%;
-                height: 80%;
+                width: 40%;
+                height: 0%;
+                padding-bottom: 15%;
+                border-radius: 60px;
+                animation: Resize 5s ease infinite 100ms;
             }
             ;
+            @keyframes Resize {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.025);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
         }
         .Random {
             width: 100%;
             height: 100%;
             overflow: hidden;
+            display: block;
+            overflow-y: hidden;
+            mask: url('.././assets/svg/Background/Rectangle.svg');
+            * {
+                visibility: hidden;
+            }
+            .Fill1 {
+                visibility: visible;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-90%, -90%);
+                width: 35%;
+                height: auto;
+                animation: Float1 5s ease-in-out infinite 0ms;
+                @keyframes Float1 {
+                    0% {
+                        transform: translate(-90%, -90%);
+                    }
+                    50% {
+                        transform: translate(-90%, -87.5%) rotate(5deg);
+                    }
+                    100% {
+                        transform: translate(-90%, -90%);
+                    }
+                }
+            }
+            .Fill2 {
+                visibility: visible;
+                position: absolute;
+                left: 60%;
+                top: 50%;
+                transform: translate(100%, 0%);
+                width: 20%;
+                height: auto;
+                animation: Float2 5s ease-in-out infinite 0ms;
+                @keyframes Float2 {
+                    0% {
+                        transform: translate(100%, 0%);
+                    }
+                    50% {
+                        transform: translate(100%, 2.5%) rotate(20deg);
+                    }
+                    100% {
+                        transform: translate(100%, 0%);
+                    }
+                }
+            }
+            .Fill3 {
+                visibility: visible;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, 60%);
+                width: 30%;
+                height: auto;
+                animation: Float3 5s ease-in-out infinite 0ms;
+                @keyframes Float3 {
+                    0% {
+                        transform: translate(-50%, 60%);
+                    }
+                    50% {
+                        transform: translate(-50%, 55.5%) rotate(20deg);
+                    }
+                    100% {
+                        transform: translate(-50, 60%);
+                    }
+                }
+            }
+            .Fill4 {
+                visibility: visible;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-200%, 25%);
+                width: 30%;
+                height: auto;
+                animation: Float4 5s ease-in-out infinite 0ms;
+                @keyframes Float4 {
+                    0% {
+                        transform: translate(-200%, 25%);
+                    }
+                    50% {
+                        transform: translate(-200%, 22.5%) rotate(-20deg);
+                    }
+                    100% {
+                        transform: translate(-200%, 25%);
+                    }
+                }
+            }
+            .Fill5 {
+                visibility: visible;
+                position: absolute;
+                left: 0%;
+                top: 5%;
+                width: 15%;
+                height: auto;
+                animation: Float5 5s ease-in-out infinite 0ms;
+                @keyframes Float5 {
+                    0% {
+                        top: 5%
+                    }
+                    50% {
+                        top: 2.5%;
+                    }
+                    100% {
+                        top: 5%;
+                    }
+                }
+            }
+            .Fill6 {
+                visibility: visible;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(140%, -200%);
+                width: 20%;
+                height: auto;
+                animation: Float6 5s ease-in-out infinite 0ms;
+                @keyframes Float6 {
+                    0% {
+                        transform: translate(140%, -200%) rotate(0deg);
+                    }
+                    50% {
+                        transform: translate(140%, -210%) rotate(20deg);
+                    }
+                    100% {
+                        transform: translate(140%, -200%) rotate(0deg);
+                    }
+                }
+            }
+        }
+        .Oval {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 550px;
+            height: 550px;
+            bottom: -5%;
+            right: -25%;
+            background-color: transparent;
+            border-radius: 50%;
+            z-index: 0;
+            outline: 150px solid $secondary;
+            box-shadow: 0px 0px 80px rgba(89, 0, 255, 0.75);
+            &::before {
+                content: "";
+                width: calc(100% + 300px);
+                height: calc(100% + 300px);
+                background: transparent;
+                position: absolute;
+                border-radius: 50%;
+                z-index: 100;
+                box-shadow: 0px 0px 80px rgba(89, 0, 255, 1);
+                animation: GlowOut 2s ease-in-out infinite 0ms;
+                @keyframes GlowOut {
+                    0% {
+                        box-shadow: 0px 0px 80px rgba(89, 0, 255, 0.75);
+                    }
+                    50% {
+                        box-shadow: 0px 0px 80px rgba(89, 0, 255, 0.5);
+                    }
+                    100% {
+                        box-shadow: 0px 0px 80px rgba(89, 0, 255, 0.75);
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                z-index: 100;
+                box-shadow: inset 0px 0px 80px rgba(89, 0, 255, 0.75);
+                animation: GlowIn 2s ease-in-out infinite 0ms;
+                @keyframes GlowIn {
+                    0% {
+                        box-shadow: inset 0px 0px 80px rgba(89, 0, 255, 0.75);
+                    }
+                    50% {
+                        box-shadow: inset 0px 0px 80px rgba(89, 0, 255, 0.5);
+                    }
+                    100% {
+                        box-shadow: inset 0px 0px 80px rgba(89, 0, 255, 0.75);
+                    }
+                }
+            }
+        }
+    }
+    #Mask {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .MainBackground {
+        height: 70vh !important;
+        .Background {
+            .Center {
+                transform: translateY(-52.5vh);
+            }
         }
     }
 }

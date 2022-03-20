@@ -3,9 +3,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 1000px;
     width: 100%;
     background-color: transparent;
+    text-align: center;
+    * {
+        transition: font-size 0.5s ease-in-out;
+    }
     .container {
         height: 300px;
         display: flex;
@@ -44,14 +47,14 @@
             width: 100%;
             input[type="text"] {
                 border-radius: 10px;
-                background-color: rgba(100, 100, 100, 0.45);
+                background-color: rgba(100, 100, 100, 0.3);
                 width: 80%;
                 height: 60px;
                 padding: 10px 30px;
                 font-size: 18px;
                 border: none;
-                color: #fff;
-                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.25);
+                color: rgb(100, 100, 100);
+                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
                 &:focus {
                     border: none;
                     outline: none;
@@ -59,7 +62,7 @@
                 &:hover {
                     border: none;
                     outline: none;
-                    border: 5px solid rgb(136, 136, 136);
+                    border: 5px solid rgb(100, 100, 100);
                     padding: 10px 25px;
                 }
             }
@@ -90,6 +93,44 @@
                     filter: brightness(0.9);
                     border: 5px solid rebeccapurple;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .Main {
+        width: 100% !important;
+        .container {
+            .Text {
+                h1 {
+                    font-size: 20px !important;
+                    font-weight: 400 !important;
+                    span {
+                        font-weight: bold !important;
+                    }
+                }
+                p {
+                    font-size: 15px !important;
+                    width: 100%;
+                }
+            }
+        }
+        .Keywords {
+            display: flex;
+            flex-direction: column;
+            input[type="text"] {
+                width: 100% !important;
+                height: 30px !important;
+                border-radius: 50px !important;
+                font-size: 12px !important;
+            }
+            button {
+                width: 50% !important;
+                border-radius: 50px !important;
+                margin-top: 30px;
+                height: 30px !important;
+                font-size: 12px !important;
             }
         }
     }

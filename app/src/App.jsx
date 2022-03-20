@@ -1,8 +1,10 @@
 import { useState } from 'react'
-import './dist/index.css'
-import Header from './Layouts/header.jsx'
-import Main from './component/main.jsx'
-import MainBackground from './component/mainBackground.jsx';
+import './dist/index.min.css'
+import Header from './Layouts/header'
+import Main from './component/main'
+import MainBackground from './component/mainBackground';
+import Options from './component/options'
+import Purpose from './component/purpose'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +15,10 @@ function App() {
         <MainBackground/>
         <Header/>
         <Main/>
+      </div>
+      <div className="Content">
+        <Options/>
+        <Purpose/>
       </div>
     </div>
   )
