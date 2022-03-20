@@ -34,17 +34,18 @@
         }
         .Icon {
             position: relative;
-            width: 80%;
+            width: 100%;
             svg {
                 font-size: 60px;
                 color: $secondary;
+                margin-left: 8%;
             }
             &::before {
                 content: '';
                 width: 10px;
                 height: 100%;
                 position: absolute;
-                left: -38px;
+                left: 0px;
                 top: 0;
                 background-color: $secondary;
             }
