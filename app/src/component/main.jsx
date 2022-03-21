@@ -1,4 +1,9 @@
 import React, {useState, useEffect} from 'react';
+import CloseIcon from '@mui/icons-material/Close';
+import ReactTagInput from "@pathofdev/react-tag-input";
+
+
+
 
 
 const Title = () => {
@@ -24,11 +29,30 @@ function Text(){
     )
 }
 
-const Input = () => {
+
+
+function Input() {
+    const [tags, setTags] = React.useState([])
     return (
-        <input type="text" className="Input" placeholder="Enter keywords"/>
+      <ReactTagInput 
+        tags={tags} 
+        onChange={(newTags) => setTags(newTags)}
+        placeholder="Enter keywords..."
+        editable={true}
+        readOnly={false}
+        removeOnBackspace={true}
+        maxTags={5}
+        validator={(value) => {
+            const isValid = value.length <= 15 && value.includes(' ') != true;
+            if (!isValid) {
+              alert("Please enter a keyword that is less than 15 characters and doestn't contain spaces.");
+            }
+            // Return boolean to indicate validity
+            return isValid;
+          }}
+      />
     )
-} 
+  }
 
 const KeywordsButton = () => {
     return (
@@ -40,13 +64,15 @@ const KeywordsButton = () => {
 
 
 
-function Keywords() {
-    return (
+class Keywords extends React.Component {
+    render() {
+        return (
         <div className="Keywords">
             <Input/>
             <KeywordsButton/>
         </div>
-    )
+        )
+    }
 }
 
 function Main() {
@@ -58,4 +84,11 @@ function Main() {
     )
 }
 
+
 export default Main;
+
+
+
+
+
+

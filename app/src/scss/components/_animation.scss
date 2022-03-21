@@ -1,0 +1,826 @@
+@keyframes Spin1 {
+    0% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+    }
+    10% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+    }
+    20% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    30% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    40% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    50% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    60% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    70% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    80% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    90% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+    }
+    100% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes Spin2 {
+    0% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+    }
+    10% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    20% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    30% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    40% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    50% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    60% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    70% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    80% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    90% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(255, 157, 0, 0.25);
+    }
+    100% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@keyframes Spin3 {
+    0% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    10% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    20% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    30% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    40% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    50% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    60% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    70% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1)
+    }
+    80% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(255, 217, 0, 0.25);
+    }
+    90% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+}
+
+@keyframes Spin4 {
+    0% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    10% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    20% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    30% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    40% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    50% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    60% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    70% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(4, 121, 0, 0.25);
+    }
+    80% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    90% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    100% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+}
+
+@keyframes Spin5 {
+    0% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    10% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    20% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    30% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    40% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    50% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    60% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(0, 68, 255, 0.25);
+    }
+    70% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    80% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    90% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    100% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+}
+
+@keyframes Spin6 {
+    0% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    10% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    20% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    30% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    40% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(0, 98, 255, 0.25);
+    }
+    60% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    70% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    80% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    90% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    100% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+}
+
+@keyframes Spin7 {
+    0% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    10% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    20% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    30% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    40% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(255, 123, 0, 0.25);
+    }
+    50% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    60% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    70% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    80% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    90% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    100% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+}
+
+@keyframes Spin8 {
+    0% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    10% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    20% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    30% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(174, 0, 255, 0.25);
+    }
+    40% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    60% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    70% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    80% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    90% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    100% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+}
+
+@keyframes Spin9 {
+    0% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    10% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    20% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(255, 0, 64, 0.25);
+    }
+    30% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    40% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    50% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    60% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    70% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    80% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    90% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    100% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+}
+
+@keyframes Spin10 {
+    0% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    10% {
+        z-index: 11;
+        width: 37.5%;
+        height: auto;
+        padding-bottom: 35.5%;
+        transform: translate(0%, 0%);
+        box-shadow: 0px 0px 100px rgba(0, 255, 149, 0.25);
+    }
+    20% {
+        z-index: 10;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(135%, -135%);
+        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    }
+    30% {
+        z-index: 9;
+        width: 20%;
+        height: auto;
+        padding-bottom: 20%;
+        transform: translate(165%, -0%);
+    }
+    40% {
+        z-index: 8;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(165%, 135%);
+    }
+    50% {
+        z-index: 7;
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+        transform: translate(30%, 150%);
+    }
+    60% {
+        z-index: 6;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-90%, 190%);
+    }
+    70% {
+        z-index: 5;
+        width: 22.5%;
+        height: auto;
+        padding-bottom: 22.5%;
+        transform: translate(-140%, 60%);
+    }
+    80% {
+        z-index: 4;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-190%, -50%);
+    }
+    90% {
+        z-index: 3;
+        width: 15%;
+        height: auto;
+        padding-bottom: 15%;
+        transform: translate(-120%, -140%);
+    }
+    100% {
+        z-index: 2;
+        transform: translate(0%, -135%);
+        width: 25%;
+        height: auto;
+        padding-bottom: 25%;
+    }
+}

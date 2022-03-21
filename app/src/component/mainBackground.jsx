@@ -27,12 +27,12 @@ const SVG = () => {
             </div>
 
             <div className="Random">
-                <img src={Fill1} className="Fill1"/>
-                <img src={Fill2} className="Fill2"/>
-                <img src={Fill3} className="Fill3"/>
-                <img src={Fill4} className="Fill4"/>
-                <img src={Fill5} className="Fill5"/>
-                <img src={Fill6} className="Fill6"/>
+                <img src={Fill1} className="Fill Fill1"/>
+                <img src={Fill2} className="Fill Fill2"/>
+                <img src={Fill3} className="Fill Fill3"/>
+                <img src={Fill4} className="Fill Fill4"/>
+                <img src={Fill5} className="Fill Fill5"/>
+                <img src={Fill6} className="Fill Fill6"/>
             </div>
 
             <div className="Oval"></div>
