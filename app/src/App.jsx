@@ -6,6 +6,7 @@ import MainBackground from './component/mainBackground';
 import Options from './component/options'
 import Purpose from './component/purpose'
 import Services from './component/services'
+import Footer from './Layouts/footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,9 @@ function App() {
         <Options/>
         <Purpose/>
         <Services/>
+      </div>
+      <div className='Footer'>
+        <Footer/>
       </div>
     </div>
   )
