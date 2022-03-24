@@ -4,13 +4,13 @@
         .Keywords {
             margin-top: 50px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between !important;
             width: 100%;
             .react-tag-input {
                 border-radius: 10px;
                 background-color: rgba(100, 100, 100, 0.3);
-                width: 80%;
+                width: 80% !important;
                 height: 60px;
                 padding: 10px 30px;
                 font-size: 18px;
@@ -20,6 +20,10 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 &:focus {
                     border: none;
                     outline: none;
@@ -31,15 +35,18 @@
                 }
             }
             .react-tag-input__input {
-                display: inline-block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 border: none;
                 background-color: transparent;
                 outline: none;
                 color: #fff;
                 height: 90%;
-                width: auto;
                 font-size: 15px;
                 font-weight: 500;
+                overflow-x: auto !important;
+                white-space: nowrap !important;
             }
             .react-tag-input__input::placeholder,
             .react-tag-input__input:-moz-placeholder,

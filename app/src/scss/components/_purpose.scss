@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
+    background-color: transparent;
     .Purpose {
         position: relative;
         display: flex;
@@ -150,7 +151,7 @@
                 background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: center;
-                animation: Spin1 60s ease-in-out infinite;
+                animation: Spin1 60s ease infinite;
             }
             .Bitcoin {
                 visibility: visible;
@@ -159,7 +160,7 @@
                 padding-bottom: 15%;
                 background-image: url('src/assets/img/Companies/Bitcoin.png');
                 transform: translate(135%, -135%);
-                animation: Spin2 60s ease-in-out infinite;
+                animation: Spin2 60s ease infinite;
             }
             .Binance {
                 visibility: visible;
@@ -169,7 +170,7 @@
                 background-image: url('src/assets/img/Companies/Binance.png');
                 background-size: 100%;
                 transform: translate(165%, -0%);
-                animation: Spin3 60s ease-in-out infinite;
+                animation: Spin3 60s ease infinite;
             }
             .Fiverr {
                 visibility: visible;
@@ -179,7 +180,7 @@
                 background-image: url('src/assets/img/Companies/Fiverr.png');
                 background-size: 80%;
                 transform: translate(165%, 135%);
-                animation: Spin4 60s ease-in-out infinite;
+                animation: Spin4 60s ease infinite;
             }
             .Facebook {
                 visibility: visible;
@@ -189,7 +190,7 @@
                 background-image: url('src/assets/img/Companies/Facebook.png');
                 background-size: 80%;
                 transform: translate(30%, 150%);
-                animation: Spin5 60s ease-in-out infinite;
+                animation: Spin5 60s ease infinite;
             }
             .Meta {
                 visibility: visible;
@@ -199,7 +200,7 @@
                 background-image: url('src/assets/img/Companies/Meta.png');
                 background-size: 80%;
                 transform: translate(-90%, 190%);
-                animation: Spin6 60s ease-in-out infinite;
+                animation: Spin6 60s ease infinite;
             }
             .IQ-Option {
                 visibility: visible;
@@ -209,7 +210,7 @@
                 background-image: url('src/assets/img/Companies/IQ-Option.png');
                 background-size: 80%;
                 transform: translate(-140%, 60%);
-                animation: Spin7 60s ease-in-out infinite;
+                animation: Spin7 60s ease infinite;
             }
             .Instagram {
                 visibility: visible;
@@ -219,7 +220,7 @@
                 background-image: url('src/assets/img/Companies/Instagram.png');
                 background-size: 80%;
                 transform: translate(-190%, -50%);
-                animation: Spin8 60s ease-in-out infinite;
+                animation: Spin8 60s ease infinite;
             }
             .Airbnb {
                 visibility: visible;
@@ -229,7 +230,7 @@
                 background-image: url('src/assets/img/Companies/Airbnb.png');
                 background-size: 80%;
                 transform: translate(-120%, -140%);
-                animation: Spin9 60s ease-in-out infinite;
+                animation: Spin9 60s ease infinite;
             }
             .Spotify {
                 visibility: visible;
@@ -238,7 +239,7 @@
                 padding-bottom: 25%;
                 background-image: url('src/assets/img/Companies/Spotify.png');
                 transform: translate(0%, -135%);
-                animation: Spin10 60s ease-in-out infinite;
+                animation: Spin10 60s ease infinite;
             }
         }
     }

@@ -1,6 +1,6 @@
 .Services {
     width: 65%;
-    height: 400px;
+    height: 300px;
     margin-top: 200px;
     color: #fff;
     display: flex;
@@ -70,7 +70,8 @@
         .Text {
             height: 100%;
             width: 100%;
-            padding: 80px 0px;
+            padding: 60px 0px;
+            padding-bottom: 70px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -80,11 +81,12 @@
                 width: 100%;
                 text-align: center;
                 font-size: 30px;
-                font-weight: 700;
+                font-weight: 800;
             }
             .Description {
                 width: 75%;
-                font-size: 17.5px;
+                font-size: 15px;
+                font-weight: 200;
             }
         }
     }
