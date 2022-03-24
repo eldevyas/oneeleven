@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import Fill1 from '../assets/svg/Background/Fill 1.svg'
 import Fill2 from '../assets/svg/Background/Fill 2.svg'
 import Fill3 from '../assets/svg/Background/Fill 3.svg'
@@ -10,12 +12,12 @@ import Fill6 from '../assets/svg/Background/Fill 6.svg'
 const Texture = () => {
     return(
         <div className="Texture">
-            <img src={Fill1} className="Fill1"/>
-            <img src={Fill2} className="Fill2"/>
-            <img src={Fill3} className="Fill3"/>
-            <img src={Fill4} className="Fill4"/>
-            <img src={Fill5} className="Fill5"/>
-            <img src={Fill6} className="Fill6"/>
+            <img src={Fill1} className="Fill Fill1"/>
+            <img src={Fill2} className="Fill Fill2"/>
+            <img src={Fill3} className="Fill Fill3"/>
+            <img src={Fill4} className="Fill Fill4"/>
+            <img src={Fill5} className="Fill Fill5"/>
+            <img src={Fill6} className="Fill Fill6"/>
         </div>
     )
 }
@@ -34,9 +36,11 @@ const Input = () => {
     return (
         <form className="Form">
             <label>
+                <AccountCircleOutlinedIcon className='icon'/>
                 <input type="text" className="Name" placeholder="Enter your name"/>
             </label>
             <label>
+                <EmailOutlinedIcon className='icon'/>
                 <input type="email" className="E-mail" placeholder="Enter your e-mail"/>
             </label>
 
