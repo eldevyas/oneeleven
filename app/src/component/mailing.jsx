@@ -44,7 +44,7 @@ const Input = () => {
                 <input type="email" className="E-mail" placeholder="Enter your e-mail"/>
             </label>
 
-            <button className="Button" type="submit">Subscribe</button>
+            <button className="Button" type="button">Subscribe</button>
         </form>
     )
 }
@@ -63,4 +63,8 @@ class Mailing extends React.Component{
 }
 
 export default Mailing;
+
+
+
+
 
