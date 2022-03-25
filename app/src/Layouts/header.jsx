@@ -14,7 +14,6 @@ function Menu() {
     let Visible = false;
     
     function Toggle() {
-        console.log('Called!')
         if (Visible == true) {
             $('.Menu a').css('animation', 'Unvisible 0.5s ease forwards');
             $('#Switch').css('transform', 'rotate(0deg)');
