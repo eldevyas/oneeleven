@@ -1,39 +1,25 @@
-import { useState } from 'react'
-import './Dist/index.css'
+import React, { useState } from 'react'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Home from './Routes/Home'
+import Login from './Routes/Login'
 import Header from './Layouts/header'
-import Main from './Components/main'
-import MainBackground from './Components/mainBackground';
-import Options from './Components/options'
-import Purpose from './Components/purpose'
-import Algorithm from './Components/algorithm'
-import Services from './Components/services'
-import Mailing from './Components/mailing'
-import Footer from './Layouts/footer'
-import TopButton from './Layouts/topButton'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+    return(
+        <Router>
+            <div className="App">
+                <Header/>
 
-  return (
-    <div>
-      <div className="Main">
-        <MainBackground/>
-        <Header/>
-        <Main/>
-      </div>
-      <div className="Content">
-        <Options/>
-        <Purpose/>
-        <Algorithm/>
-        <Services/>
-        <Mailing/>
-        <TopButton/>
-      </div>
-      <div className='Footer'>
-        <Footer/>
-      </div>
-    </div>
-  )
+                <div className="Page">
+                <Routes>
+                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/login" element={<Login />}></Route>
+                </Routes>
+                </div>
+            </div>
+        </Router>
+    )
 }
 
 export default App;
