@@ -1,0 +1,28 @@
+.TopButton {
+    position: fixed;
+    right: 2.5%;
+    bottom: 2.5%;
+    width: 3.5%;
+    height: 0;
+    padding-bottom: 3.5%;
+    background-color: $secondary;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.90;
+    transform: translateX(200%);
+    &:hover {
+        cursor: pointer;
+        opacity: 1;
+    }
+    #Arrow {
+        position: absolute;
+        color: #eee;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

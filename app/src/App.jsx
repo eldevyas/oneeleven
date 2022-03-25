@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import './dist/index.min.css'
+import './Dist/index.css'
 import Header from './Layouts/header'
-import Main from './component/main'
-import MainBackground from './component/mainBackground';
-import Options from './component/options'
-import Purpose from './component/purpose'
-import Algorithm from './component/algorithm'
-import Services from './component/services'
-import Mailing from './component/mailing'
+import Main from './Components/main'
+import MainBackground from './Components/mainBackground';
+import Options from './Components/options'
+import Purpose from './Components/purpose'
+import Algorithm from './Components/algorithm'
+import Services from './Components/services'
+import Mailing from './Components/mailing'
 import Footer from './Layouts/footer'
+import TopButton from './Layouts/topButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
         <Algorithm/>
         <Services/>
         <Mailing/>
+        <TopButton/>
       </div>
       <div className='Footer'>
         <Footer/>

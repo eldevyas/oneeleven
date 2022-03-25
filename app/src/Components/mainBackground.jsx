@@ -1,17 +1,17 @@
 import React, {useState, useEffect} from 'react';
 
 
-import Rectangle from '../assets/svg/Background/Rectangle.svg'
+import Rectangle from '../Assets/svg/Background/Rectangle.svg'
 
 
-import Fill1 from '../assets/svg/Background/Fill 1.svg'
-import Fill2 from '../assets/svg/Background/Fill 2.svg'
-import Fill3 from '../assets/svg/Background/Fill 3.svg'
-import Fill4 from '../assets/svg/Background/Fill 4.svg'
-import Fill5 from '../assets/svg/Background/Fill 5.svg'
-import Fill6 from '../assets/svg/Background/Fill 6.svg'
+import Fill1 from '../Assets/svg/Background/Fill 1.svg'
+import Fill2 from '../Assets/svg/Background/Fill 2.svg'
+import Fill3 from '../Assets/svg/Background/Fill 3.svg'
+import Fill4 from '../Assets/svg/Background/Fill 4.svg'
+import Fill5 from '../Assets/svg/Background/Fill 5.svg'
+import Fill6 from '../Assets/svg/Background/Fill 6.svg'
 
-import Mask from '../assets/img/Mask.png'
+import Mask from '../Assets/img/Mask.png'
 
 
 const SVG = () => {
