@@ -43,7 +43,7 @@ const Schema = () => {
 
 function Algorithm() {
     return(
-        <div className="Algorithm">
+        <div className="Algorithm" id="Algo">
             <Text/>
             <Schema/>
         </div>

@@ -1,4 +1,7 @@
 .Content {
+    .ALgorithmJ {
+        animation: Slide 0.5s linear;
+    }
     .Algorithm {
         position: relative;
         width: 80%;
@@ -8,7 +11,6 @@
         justify-content: center;
         align-items: flex-start;
         color: #000;
-        animation: Slide 0.5s linear;
         .Text {
             width: 50%;
             z-index: 50;
@@ -70,39 +72,51 @@
                         height: 0%;
                         background-color: #303030;
                         top: 100%;
+                    }
+                }
+                .DIV {
+                    &::after {
                         animation: Stretch 0.25s linear forwards 0.5s;
                     }
                 }
                 .C1 {
                     margin-top: 0px;
                     position: relative;
+                }
+                .C1J {
                     animation: Slide-C4 0.25s linear forwards 0.75s;
                     &::after {
                         animation: Stretch 0.25s linear forwards 1s;
                     }
                 }
-                .C2 {
+                .C2 {}
+                .C2J {
                     animation: Slide-C3 0.25s linear forwards 1.25s;
                     &::after {
                         animation: Stretch 0.5s linear forwards 1.5s;
                     }
                 }
-                .C3 {
+                .C3 {}
+                .C3J {
                     animation: Slide-C2 0.25s linear forwards 1.75s;
                     &::after {
                         animation: Stretch 0.25s linear forwards 2s;
                     }
                 }
                 .C4 {
-                    animation: Slide-C1 0.25s linear forwards 2.25s;
                     &::after {
-                        animation: Stretch-B 0.5s linear forwards 2.5s;
                         position: absolute;
                         content: '';
                         width: 0.105vw;
                         height: 0%;
                         background-color: #303030;
                         top: 100%;
+                    }
+                }
+                .C4J {
+                    animation: Slide-C1 0.25s linear forwards 2.25s;
+                    &::after {
+                        animation: Stretch-B 0.5s linear forwards 2.5s;
                     }
                 }
                 .Generate {
@@ -125,6 +139,7 @@
                         margin-top: 100%;
                     }
                 }
+                .GenerateJ {}
             }
             .Output {
                 width: 25%;
@@ -136,7 +151,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                div {
+                .DIV {
                     position: relative;
                     width: 60%;
                     height: 10%;
