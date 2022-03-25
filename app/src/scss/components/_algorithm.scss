@@ -131,7 +131,6 @@
                     position: absolute;
                     bottom: 0;
                     background-color: #000;
-                    animation: Slide-C 0.25s linear forwards 2.75s;
                     &::after {
                         display: none;
                     }
@@ -139,7 +138,9 @@
                         margin-top: 100%;
                     }
                 }
-                .GenerateJ {}
+                .GenerateJ {
+                    animation: Slide-C 0.25s linear forwards 2.75s;
+                }
             }
             .Output {
                 width: 25%;
@@ -151,7 +152,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: center;
-                .DIV {
+                div {
                     position: relative;
                     width: 60%;
                     height: 10%;
@@ -171,40 +172,52 @@
                         width: 0.105vw;
                         height: 0%;
                         background-color: $green;
-                        ;
                         bottom: -100%;
+                    }
+                }
+                .DIV {
+                    &::after {
+                        animation: Stretch 0.25s linear forwards 4.10s;
                     }
                 }
                 .C1 {
                     margin-top: 0px;
                     position: relative;
+                }
+                .C1J {
                     animation: Slide-C4 0.2s linear forwards 5.35s;
                     &::after {
                         animation: Stretch 0.2s linear forwards 5.55s;
                     }
                 }
-                .C2 {
+                .C2 {}
+                .C2J {
                     animation: Slide-C3 0.2s linear forwards 4.95s;
                     &::after {
                         animation: Stretch 0.2s linear forwards 5.15s;
                     }
                 }
-                .C3 {
+                .C3 {}
+                .C3J {
                     animation: Slide-C2 0.2s linear forwards 4.55s;
                     &::after {
                         animation: Stretch 0.2s linear forwards 4.75s;
                     }
                 }
                 .C4 {
-                    animation: Slide-C1 0.2s linear forwards 4.15s;
                     &::after {
-                        animation: Stretch-B 0.2s linear forwards 4.35s;
                         position: absolute;
                         content: '';
                         width: 0.105vw;
                         height: 0%;
                         background-color: $green;
                         bottom: -170%;
+                    }
+                }
+                .C4J {
+                    animation: Slide-C1 0.2s linear forwards 4.15s;
+                    &::after {
+                        animation: Stretch-B 0.2s linear forwards 4.35s;
                     }
                 }
                 .Result {
@@ -220,7 +233,6 @@
                     bottom: 0;
                     opacity: 0;
                     transform: translateY(10%);
-                    animation: Slide-O 0.2s linear forwards 3.95s;
                     background-color: $green;
                     &::after {
                         display: none;
@@ -228,6 +240,9 @@
                     p {
                         margin-top: 100%;
                     }
+                }
+                .ResultJ {
+                    animation: Slide-O 0.2s linear forwards 3.95s;
                 }
             }
             .Process {
@@ -280,9 +295,13 @@
                             position: absolute;
                             left: -75%;
                             top: 50%;
-                            animation: Wide-L 0.15s linear forwards 2.75s;
                         }
                         margin-right: 67.5%;
+                    }
+                    .C1J {
+                        &::before {
+                            animation: Wide-L 0.15s linear forwards 2.75s;
+                        }
                         animation: Slide 0.15s linear forwards 2.90s;
                         &::after {
                             animation: Wide-R 0.15s linear forwards 3.05s;
@@ -290,24 +309,32 @@
                     }
                     .C2 {
                         margin-right: 22.5%;
+                    }
+                    .C2J {
                         animation: Slide 0.15s linear forwards 3.20s;
                         &::after {
                             animation: Wide-R 0.15s linear forwards 3.35s;
                         }
                     }
                     .C3 {
+                        margin-left: 22.5%;
+                    }
+                    .C3J {
                         animation: Slide 0.15s linear forwards 3.5s;
                         &::after {
                             animation: Wide-R 0.15s linear forwards 3.65s;
                         }
-                        margin-left: 22.5%;
                     }
                     .C4 {
-                        animation: Slide 0.15s linear forwards 3.80s;
                         margin-left: 67.5%;
                         &::after {
                             width: 0%;
                             right: -75%;
+                        }
+                    }
+                    .C4J {
+                        animation: Slide 0.15s linear forwards 3.80s;
+                        &::after {
                             animation: Wide-L 0.15s linear forwards 3.95s;
                         }
                     }
