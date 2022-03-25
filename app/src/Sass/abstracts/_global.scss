@@ -16,3 +16,34 @@ body {
         grid-auto-flow: column;
     }
 }
+
+
+/*--- ScrollBar styling ---*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background-color: $main;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background: $secondary;
+    box-shadow: inset 0 0 6px $secondary;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(255, 255, 255);
+}
