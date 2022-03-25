@@ -1,4 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import { useNavigate } from "react-router-dom";
+
+
+
+
+
 
 function Logo() {
     return (
@@ -43,10 +49,15 @@ function Menu() {
 
 
 function Buttons() {
+    let navigate = useNavigate(); 
+    const routeChange = () => { 
+        let path = `/login`; 
+        navigate(path);
+    }
     return(
         <div className="Buttons">
-            <div className="Button Sign-in">Sign in</div>
-            <div className="Button Sign-up">Sign up</div>
+            <div className="Button Sign-in" onClick={routeChange}>Sign in</div>
+            <div className="Button Sign-up" onClick={routeChange}>Sign up</div>
         </div>
     );
 }
@@ -138,6 +149,7 @@ const ResponsiveHeader = () => {
   }
 
 function Header() {
+    
     return (
         <ResponsiveHeader/>
     )
