@@ -17,7 +17,7 @@ import Mask from '../Assets/img/Mask.png'
 const SVG = () => {
     return (
         <div className="Background">
-            <img src={Rectangle} className='Rectangle'/>
+            <div className='Rectangle'></div>
 
             <div className="Center">
                 <div className='Rectangle1'></div>
@@ -30,7 +30,7 @@ const SVG = () => {
                 <img src={Fill1} className="Fill Fill1"/>
                 <img src={Fill2} className="Fill Fill2"/>
                 <img src={Fill3} className="Fill Fill3"/>
-                <img src={Fill4} className="Fill Fill4"/>
+                <img src={Fill5} className="Fill Fill4"/>
                 <img src={Fill5} className="Fill Fill5"/>
                 <img src={Fill6} className="Fill Fill6"/>
             </div>

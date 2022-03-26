@@ -9,14 +9,14 @@
             width: 100%;
             .react-tag-input {
                 border-radius: 10px;
-                background-color: rgba(100, 100, 100, 0.3);
+                background-color: $dark-shadow-03;
                 width: 80% !important;
                 height: 60px;
                 padding: 10px 30px;
                 font-size: 18px;
                 border: none;
-                color: rgb(100, 100, 100);
-                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+                color: $light-gray;
+                box-shadow: 0px 0px 30px $dark-shadow-01;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -29,7 +29,7 @@
                     outline: none;
                 }
                 &:hover {
-                    border: 5px solid rgb(100, 100, 100);
+                    border: 5px solid $light-gray;
                     outline: none;
                     padding: 5px 25px;
                 }
@@ -41,7 +41,7 @@
                 border: none;
                 background-color: transparent;
                 outline: none;
-                color: #fff;
+                color: $color;
                 height: 90%;
                 font-size: 15px;
                 font-weight: 500;
@@ -53,7 +53,7 @@
             .react-tag-input__input:-ms-input-placeholder,
             .react-tag-input__input::-moz-placeholder,
             .react-tag-input__input::-webkit-input-placeholder {
-                color: #333;
+                color: $dark-gray;
                 /* Input placeholder */
             }
             .react-tag-input__tag {
@@ -64,7 +64,7 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 90%;
-                border: 1px solid rgb(100, 100, 100);
+                border: 1px solid $light-gray;
                 margin-right: 10px;
                 user-select: none;
                 -webkit-user-select: none;
@@ -78,7 +78,7 @@
                     left: 50%;
                     transform: translate(-50%, -50%) !important;
                     border-radius: 10px;
-                    background-color: rgba(100, 100, 100, 0.25);
+                    background-color: $light-gray-shadow;
                     transition: all 0.5s ease-in-out;
                     justify-self: center;
                     align-self: center;
@@ -97,14 +97,14 @@
             .react-tag-input__tag__remove {
                 font-size: 15px;
                 background: transparent !important;
-                background-color: #fff;
+                background-color: $color;
                 color: #000 !important;
                 &:hover {
                     cursor: pointer;
                 }
                 &::after,
                 &::before {
-                    background-color: rgb(100, 100, 100);
+                    background-color: $light-gray;
                 }
             }
             button {
@@ -117,7 +117,7 @@
                 cursor: pointer;
                 font-size: 18px;
                 font-weight: bold;
-                box-shadow: 0px 0px 30px rgba(160, 0, 255, 0.75);
+                box-shadow: 0px 0px 30px $secondary-shadow;
                 transition: transform 0.5s ease-in-out;
                 &:active {
                     border: none;
@@ -132,7 +132,7 @@
                 }
                 &:hover {
                     filter: brightness(0.9);
-                    border: 5px solid rebeccapurple;
+                    border: 5px solid $secondary-dark;
                 }
             }
         }

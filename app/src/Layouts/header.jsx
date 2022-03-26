@@ -47,7 +47,6 @@ function Menu() {
 };
 
 
-
 function Buttons() {
     let navigate = useNavigate(); 
     const routeChange = () => { 
@@ -71,6 +70,7 @@ function DesktopComponent(){
         </div>
     )
 }
+
 
 function MobileComponent() {
     let MobileVisible = false;

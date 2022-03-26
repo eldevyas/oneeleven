@@ -9,18 +9,20 @@ function CheckAttitude() {
     }
 }
 
-window.addEventListener('scroll', CheckAttitude);
-
-
-$('document').ready(function() {
-    $("#BtnTop").on('click', function(event) {
-
-        if (this.hash !== "") {
-            $('html, body').animate({
-                scrollTop: 0
-            }, 800, function() {
-                window.scrollTo(0, 0)
-            })
-        }
+function GoToTop(){
+    $("#BtnTop").click(function(event){
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800, function() {
+            window.scrollTo(0, 0)
+        })
     });
+};
+
+
+
+$('document').ready(function(){
+    window.addEventListener('scroll', CheckAttitude);
+    GoToTop();
 })
+
