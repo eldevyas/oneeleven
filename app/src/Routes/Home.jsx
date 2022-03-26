@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 
 
-import '../Dist/index.css'
+import '../Dist/index.min.css'
+import Header from '../Layouts/header'
 import Main from '../Components/main'
 import MainBackground from '../Components/mainBackground';
 import Options from '../Components/options'
@@ -19,6 +20,7 @@ function Home() {
   return (
       <div>
         <div className="Main">
+          <Header/>
           <Main/>
           <MainBackground/>
         </div>
