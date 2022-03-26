@@ -1,0 +1,269 @@
+@import './../Global/colours';
+
+.Login{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .Login-Container {
+        width: 450px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h1:first-child {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $color;
+            opacity: 0.15;
+            width: 85%;
+            text-align: center;
+            justify-self: flex-start !important;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 85%;
+            height: 35%;
+
+            label{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.05);
+                height: 50px;
+                input{
+                    width: auto;
+                    height: 100%;
+                    width: 87.5%;
+                    background-color: transparent;
+                    opacity: 1;
+                    border: none;
+                    padding: 0% 5%;
+                    color: $color;
+
+                    &:focus{
+                        outline: none;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.025);
+                    }
+                }
+                span {
+                    position: relative;
+                    height: 100%;
+                    width: 0%;
+                    padding-left: 12.5%;
+                    background-color: rgba(255, 255, 255, 0.05);
+
+                    > * {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+
+                        opacity: 0.25;
+                    }
+                }
+            }
+
+            button {
+                height: 60px;
+                width: 100%;
+
+                background-color: $secondary;
+                border: none;
+
+                font-size: 18px;
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: bold;
+                text-transform: uppercase;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                position: relative;
+
+                &::after{
+                    content: '';
+                    transition: all 300ms ease-in-out;
+                    position: absolute;
+                    width: 40%;
+                    height: 60%;
+                    opacity: 0;
+                    border-radius: 40px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                &:hover{
+                    cursor: pointer;
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0px;
+                    }
+                }
+
+                &:active{
+                    cursor: pointer;
+                    &::after{
+                        opacity: 0.25;
+                        width: 75%;
+                        height: 100%;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+
+        .API{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 85%;
+
+            .Continue {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                flex: 3;
+
+                hr {
+                    flex: 1;
+                    color: $color;
+                    opacity: 0.2;
+                }
+
+                p{
+                    margin: 0 5px;
+                    color: $color;
+                    opacity: 0.2;
+                }
+            }
+
+            .Choice {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .Company{
+                    position: relative;
+                    margin-top: 20px;
+                    width: 47.5%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    img {
+                        width: 12.5%;
+                        height: auto;
+                    }
+                    p{
+                        font-size: 15px;
+                        width: 50%;
+                        opacity: 0.75;
+                        font-weight: 500;
+                    }
+
+
+                    &::after{
+                        content: '';
+                        transition: all 300ms ease-in-out;
+                        position: absolute;
+                        width: 40%;
+                        height: 60%;
+                        opacity: 0;
+                        border-radius: 40px;
+                        background-color: rgba(255, 255, 255, 0.025);
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        &::after{
+                            opacity: 1;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 0px;
+                        }
+                    }
+    
+                    &:active{
+                        cursor: pointer;
+                        &::after{
+                            opacity: 0.25;
+                            width: 75%;
+                            height: 100%;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .Sign-up{
+            width: 85%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.05);
+            text-align: center;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.75);
+
+            span {
+                position: relative;
+                color: $secondary;
+                transition: transform 300ms ease-in-out;
+
+                &:after{
+                    content: '';
+                    transition: width 300ms ease-in-out;
+                    width: 0%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    background-color: $secondary;
+                }
+
+                &:hover{
+                    cursor: pointer;
+
+                    &::after{
+                        width: 100%;
+                    }
+                }
+
+                &:active{
+                    font-size: 10px;
+                }
+            }
+        }
+
+
+    }
+}

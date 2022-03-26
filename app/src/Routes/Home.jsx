@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
-
-
-import '../Dist/index.min.css'
+import '../Dist/index.css'
 import Header from '../Layouts/header'
 import Main from '../Components/main'
 import MainBackground from '../Components/mainBackground';
