@@ -49,14 +49,19 @@ function Menu() {
 
 function Buttons() {
     let navigate = useNavigate(); 
-    const routeChange = () => { 
+    const Login = () => { 
         let path = `/login`; 
+        navigate(path);
+    }
+
+    const Register = () => { 
+        let path = `/register`; 
         navigate(path);
     }
     return(
         <div className="Buttons">
-            <div className="Button Sign-in" onClick={routeChange}>Sign in</div>
-            <div className="Button Sign-up" onClick={routeChange}>Sign up</div>
+            <div className="Button Sign-in" onClick={Login}>Sign in</div>
+            <div className="Button Sign-up" onClick={Register}>Sign up</div>
         </div>
     );
 }

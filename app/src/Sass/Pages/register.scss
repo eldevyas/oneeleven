@@ -1,6 +1,6 @@
 @import './../Global/colours';
 
-.Login{
+.Register{
     position: absolute;
     top: 0;
     left: 0;
@@ -13,9 +13,9 @@
     justify-content: center;
     align-items: center;
 
-    .Login-Container {
+    .Register-Container {
         width: 450px;
-        height: 600px;
+        height: 700px;
         background-color: rgb(24, 24, 24);
         display: flex;
         flex-direction: column;
@@ -41,7 +41,7 @@
             justify-content: space-between;
             width: 85%;
             height: 35%;
-            flex: 2;
+            flex: 2.5;
 
             label{
                 width: 100%;

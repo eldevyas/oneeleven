@@ -1,6 +1,7 @@
 import React from 'react'
-import '../Dist/login.css'
+import '../Dist/register.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
@@ -13,7 +14,6 @@ import Fill5 from '../Assets/svg/Background/Fill 5.svg'
 import Fill6 from '../Assets/svg/Background/Fill 6.svg'
 
 import { useNavigate } from "react-router-dom";
-
 
 const Background = () => {
     return(
@@ -37,17 +37,19 @@ const Background = () => {
 
 
 
-function Login() {
-    let navigate = useNavigate();
-    const Register = () => { 
-        let path = `/register`; 
+function Register() {
+
+    let navigate = useNavigate(); 
+    const Login = () => { 
+        let path = `/login`; 
         navigate(path);
     }
+
     return (
-        <div class="Login">
+        <div className="Register">
             <Background/>
-            <div className='Login-Container'>
-                <h1>Login to your account</h1>
+            <div className='Register-Container'>
+                <h1>Create a new account</h1>
 
                 <form>
                     <label className='Username'>
@@ -55,6 +57,11 @@ function Login() {
                         <input type='text' placeholder='Username'/>
                     </label>
 
+                    <label className='E-mail'>
+                        <span><EmailOutlinedIcon/></span>
+                        <input type='email' placeholder='E-mail'/>
+                    </label>
+ 
                     <label className='Password'>
                         <span><LockOutlinedIcon/></span>
                         <input type='password' placeholder='Password'/>
@@ -66,7 +73,7 @@ function Login() {
                 <div className='API'>
                     <div className='Continue'>
                         <hr/>
-                        <p>or continue with</p>
+                        <p>or register with</p>
                         <hr/>
                     </div>
 
@@ -84,7 +91,7 @@ function Login() {
                 </div>
 
                 <div className='Sign-up'>
-                    <p>Don't have an account? <span onClick={Register}>Sign up</span></p>
+                    <p>Already have an account? <span onClick={Login}>Sign in</span></p>
                 </div>
 
             </div>
@@ -92,4 +99,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default Register;
