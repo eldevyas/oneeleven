@@ -1,7 +1,6 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 
 import {useAuth} from '../Contexts/AuthContext'
-
 import '../Dist/register.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -23,7 +22,6 @@ const Background = () => {
     return(
         <div className="Background">
             <div className='Rectangle'></div>
-
             <div className="Random">
                 <img src={Fill1} className="Fill Fill1"/>
                 <img src={Fill2} className="Fill Fill2"/>
@@ -43,21 +41,13 @@ const Background = () => {
 
 function Register() {
 
-    const   usernameRef = useRef(),
-            emailRef = useRef(),
-            passwordRef = useRef(),
-            passwordConfirmationRef = useRef(),
-            { signup } = useAuth();
-
-    function handleSubmit(e) {
-        e.preventDefault()
-
-        if (password){
-            
-        }
-
-        signup(emailRef.current.value, passwordRef.current.value)
-    }
+    const usernameRef = useRef();
+    const emailRef = useRef();
+    const passwordRef = useRef();
+    const passwordConfirmationRef = useRef();
+    const { signup, currentUser } = useAuth();
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState('')
 
     let navigate = useNavigate(); 
     const Login = () => { 
@@ -65,13 +55,39 @@ function Register() {
         navigate(path);
     }
 
+    
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+
+        if (passwordRef.current.value !== passwordConfirmationRef.current.value){
+            return setError('Passwords do not match');
+        }
+
+        try {
+            setError('')
+            setLoading(true)
+            await signup(emailRef.current.value, passwordRef.current.value)
+            Login();
+        } catch {
+            setError('Failed to create an account')
+        }
+        setLoading(false)
+
+        
+    }
+
+    
+
     return (
         <div className="Register">
             <Background/>
             <div className='Register-Container'>
                 <h1>Create a new account</h1>
+                {currentUser && currentUser.email}
+                {error &&  alert(error)}
 
-                <form>
+                <form onSubmit={handleSubmit}>
                     <label className='Username'>
                         <span><AccountCircleOutlinedIcon/></span>
                         <input type='text' placeholder='Username' ref={usernameRef} required/>
@@ -92,7 +108,7 @@ function Register() {
                         <input type='password' placeholder='Repeat Password' ref={passwordConfirmationRef} required/>
                     </label>
 
-                    <button type='submit'>Sign up</button>
+                    <button disabled={loading} type='submit'>Sign up</button>
                 </form>
 
                 <div className='API'>

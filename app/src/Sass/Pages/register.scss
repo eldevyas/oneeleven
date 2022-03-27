@@ -1,6 +1,5 @@
 @import './../Global/colours';
-
-.Register{
+.Register {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     .Register-Container {
         width: 450px;
         height: 700px;
@@ -22,7 +20,6 @@
         justify-content: space-around;
         align-items: center;
         padding: 2.5% 0;
-
         h1:first-child {
             font-size: 20px;
             text-transform: uppercase;
@@ -33,7 +30,6 @@
             justify-self: flex-start !important;
             flex: 1;
         }
-
         form {
             display: flex;
             flex-direction: column;
@@ -42,15 +38,14 @@
             width: 85%;
             height: 35%;
             flex: 3.5;
-
-            label{
+            label {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background-color: rgba(255, 255, 255, 0.05);
                 height: 50px;
-                input{
+                input {
                     width: auto;
                     height: 100%;
                     width: 87.5%;
@@ -59,11 +54,9 @@
                     border: none;
                     padding: 0% 5%;
                     color: $color;
-
-                    &:focus{
+                    &:focus {
                         outline: none;
                     }
-
                     &:hover {
                         background-color: rgba(255, 255, 255, 0.025);
                     }
@@ -74,37 +67,30 @@
                     width: 0%;
                     padding-left: 12.5%;
                     background-color: rgba(255, 255, 255, 0.05);
-
-                    > * {
+                    >* {
                         position: absolute;
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
-
                         opacity: 0.25;
                     }
                 }
             }
-
             button {
                 height: 60px;
                 width: 100%;
-
                 background-color: $secondary;
                 border: none;
-
+                outline: none;
                 font-size: 18px;
                 color: rgba(255, 255, 255, 0.5);
                 font-weight: bold;
                 text-transform: uppercase;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 position: relative;
-
-                &::after{
+                &::after {
                     content: '';
                     transition: all 300ms ease-in-out;
                     position: absolute;
@@ -114,19 +100,18 @@
                     border-radius: 40px;
                     background-color: rgba(255, 255, 255, 0.1);
                 }
-                &:hover{
+                &:hover {
                     cursor: pointer;
-                    &::after{
+                    &::after {
                         opacity: 1;
                         width: 100%;
                         height: 100%;
                         border-radius: 0px;
                     }
                 }
-
-                &:active{
+                &:active {
                     cursor: pointer;
-                    &::after{
+                    &::after {
                         opacity: 0.25;
                         width: 75%;
                         height: 100%;
@@ -135,15 +120,13 @@
                 }
             }
         }
-
-        .API{
+        .API {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             width: 85%;
             flex: 1;
-
             .Continue {
                 display: flex;
                 align-items: center;
@@ -151,20 +134,17 @@
                 width: 100%;
                 flex: 3;
                 height: 15%;
-
                 hr {
                     flex: 1;
                     color: $color;
                     opacity: 0.2;
                 }
-
-                p{
+                p {
                     margin: 0 5px;
                     color: $color;
                     opacity: 0.2;
                 }
             }
-
             .Choice {
                 width: 100%;
                 height: 50px;
@@ -172,8 +152,7 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 50px;
-
-                .Company{
+                .Company {
                     position: relative;
                     width: 47.5%;
                     height: 100%;
@@ -181,20 +160,17 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-
                     img {
                         width: 12.5%;
                         height: auto;
                     }
-                    p{
+                    p {
                         font-size: 15px;
                         width: 50%;
                         opacity: 0.75;
                         font-weight: 500;
                     }
-
-
-                    &::after{
+                    &::after {
                         content: '';
                         transition: all 300ms ease-in-out;
                         position: absolute;
@@ -204,19 +180,18 @@
                         border-radius: 40px;
                         background-color: rgba(255, 255, 255, 0.025);
                     }
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
-                        &::after{
+                        &::after {
                             opacity: 1;
                             width: 100%;
                             height: 100%;
                             border-radius: 0px;
                         }
                     }
-    
-                    &:active{
+                    &:active {
                         cursor: pointer;
-                        &::after{
+                        &::after {
                             opacity: 0.25;
                             width: 75%;
                             height: 100%;
@@ -225,10 +200,8 @@
                     }
                 }
             }
-
         }
-
-        .Sign-up{
+        .Sign-up {
             width: 85%;
             height: 40px;
             display: flex;
@@ -240,12 +213,10 @@
             color: rgba(255, 255, 255, 0.75);
             flex: 0.5;
             margin-top: 50px;
-
             span {
                 position: relative;
                 color: $secondary;
-
-                &:after{
+                &:after {
                     content: '';
                     transition: width 300ms ease-in-out;
                     width: 0%;
@@ -255,18 +226,15 @@
                     left: 0;
                     background-color: $secondary;
                 }
-
-                &:hover{
+                &:hover {
                     cursor: pointer;
-
-                    &::after{
+                    &::after {
                         width: 100%;
                     }
                 }
             }
         }
     }
-
     .Background {
         width: 100%;
         position: absolute;
@@ -490,4 +458,3 @@
         }
     }
 }
-

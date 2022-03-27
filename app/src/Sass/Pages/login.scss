@@ -1,6 +1,5 @@
 @import './../Global/colours';
-
-.Login{
+.Login {
     position: absolute;
     top: 0;
     left: 0;
@@ -12,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     .Login-Container {
         width: 450px;
         height: 650px;
@@ -22,7 +20,6 @@
         justify-content: space-around;
         align-items: center;
         padding: 2.5% 0;
-
         h1:first-child {
             font-size: 20px;
             text-transform: uppercase;
@@ -33,7 +30,6 @@
             justify-self: flex-start !important;
             flex: 1;
         }
-
         form {
             display: flex;
             flex-direction: column;
@@ -41,15 +37,14 @@
             justify-content: space-between;
             width: 85%;
             flex: 3;
-
-            > label{
+            >label {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 background-color: rgba(255, 255, 255, 0.05);
                 height: 50px;
-                input{
+                input {
                     width: auto;
                     height: 100%;
                     width: 87.5%;
@@ -58,11 +53,9 @@
                     border: none;
                     padding: 0% 5%;
                     color: $color;
-
-                    &:focus{
+                    &:focus {
                         outline: none;
                     }
-
                     &:hover {
                         background-color: rgba(255, 255, 255, 0.025);
                     }
@@ -73,18 +66,15 @@
                     width: 0%;
                     padding-left: 12.5%;
                     background-color: rgba(255, 255, 255, 0.05);
-
-                    > * {
+                    >* {
                         position: absolute;
                         left: 50%;
                         top: 50%;
                         transform: translate(-50%, -50%);
-
                         opacity: 0.25;
                     }
                 }
             }
-
             .RememberMe {
                 width: 100%;
                 height: fit-content;
@@ -98,15 +88,11 @@
                 grid-template-columns: 1em auto;
                 gap: 0.5em;
                 color: $light-gray;
-                  
-
-                
                 input[type="checkbox"] {
                     -webkit-appearance: none;
                     appearance: none;
                     background-color: transparent;
                     margin: 0;
-                
                     font: inherit;
                     color: $light-gray;
                     width: 1.15em;
@@ -114,11 +100,9 @@
                     border: 0.15em solid $light-gray;
                     border-radius: 0.15em;
                     transform: translateY(-0.075em);
-                
                     display: grid;
                     place-content: center;
                 }
-                
                 input[type="checkbox"]::before {
                     content: "";
                     width: 0.65em;
@@ -131,40 +115,32 @@
                     /* Windows High Contrast Mode */
                     background-color: $light-gray;
                 }
-                
                 input[type="checkbox"]:checked::before {
                     transform: scale(1);
                 }
-                
                 input[type="checkbox"]:focus {
                     outline: none;
                     outline-offset: none;
                 }
-
                 label {
                     margin-left: 5px;
                 }
             }
-
             button {
                 height: 60px;
                 width: 100%;
-
                 background-color: $secondary;
                 border: none;
-
+                outline: none;
                 font-size: 18px;
                 color: rgba(255, 255, 255, 0.5);
                 font-weight: bold;
                 text-transform: uppercase;
-
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 position: relative;
-
-                &::after{
+                &::after {
                     content: '';
                     transition: all 300ms ease-in-out;
                     position: absolute;
@@ -174,19 +150,18 @@
                     border-radius: 40px;
                     background-color: rgba(255, 255, 255, 0.1);
                 }
-                &:hover{
+                &:hover {
                     cursor: pointer;
-                    &::after{
+                    &::after {
                         opacity: 1;
                         width: 100%;
                         height: 100%;
                         border-radius: 0px;
                     }
                 }
-
-                &:active{
+                &:active {
                     cursor: pointer;
-                    &::after{
+                    &::after {
                         opacity: 0.25;
                         width: 75%;
                         height: 100%;
@@ -194,18 +169,17 @@
                     }
                 }
             }
-            .Reset{
+            .Reset {
                 width: 100%;
                 text-align: center;
                 p {
                     font-size: 14px;
                     font-weight: 200;
                     color: rgba(255, 255, 255, 0.5);
-                    span{
+                    span {
                         position: relative;
                         color: $secondary;
-
-                        &:after{
+                        &:after {
                             content: '';
                             transition: width 300ms ease-in-out;
                             width: 0%;
@@ -215,27 +189,23 @@
                             left: 0;
                             background-color: $secondary;
                         }
-
-                        &:hover{
+                        &:hover {
                             cursor: pointer;
-
-                            &::after{
+                            &::after {
                                 width: 100%;
                             }
                         }
-                            }
-                        }
+                    }
+                }
             }
         }
-
-        .API{
+        .API {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             width: 85%;
             flex: 1;
-
             .Continue {
                 display: flex;
                 align-items: center;
@@ -243,20 +213,17 @@
                 width: 100%;
                 flex: 3;
                 height: 15%;
-
                 hr {
                     flex: 1;
                     color: $color;
                     opacity: 0.2;
                 }
-
-                p{
+                p {
                     margin: 0 5px;
                     color: $color;
                     opacity: 0.2;
                 }
             }
-
             .Choice {
                 width: 100%;
                 height: 50px;
@@ -264,8 +231,7 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 50px;
-
-                .Company{
+                .Company {
                     position: relative;
                     width: 47.5%;
                     height: 100%;
@@ -273,20 +239,17 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
-
                     img {
                         width: 12.5%;
                         height: auto;
                     }
-                    p{
+                    p {
                         font-size: 15px;
                         width: 50%;
                         opacity: 0.75;
                         font-weight: 500;
                     }
-
-
-                    &::after{
+                    &::after {
                         content: '';
                         transition: all 300ms ease-in-out;
                         position: absolute;
@@ -296,19 +259,18 @@
                         border-radius: 40px;
                         background-color: rgba(255, 255, 255, 0.025);
                     }
-                    &:hover{
+                    &:hover {
                         cursor: pointer;
-                        &::after{
+                        &::after {
                             opacity: 1;
                             width: 100%;
                             height: 100%;
                             border-radius: 0px;
                         }
                     }
-    
-                    &:active{
+                    &:active {
                         cursor: pointer;
-                        &::after{
+                        &::after {
                             opacity: 0.25;
                             width: 75%;
                             height: 100%;
@@ -317,10 +279,8 @@
                     }
                 }
             }
-
         }
-
-        .Sign-up{
+        .Sign-up {
             width: 85%;
             height: 40px;
             display: flex;
@@ -332,12 +292,10 @@
             color: rgba(255, 255, 255, 0.75);
             flex: 0.5;
             margin-top: 50px;
-
             span {
                 position: relative;
                 color: $secondary;
-
-                &:after{
+                &:after {
                     content: '';
                     transition: width 300ms ease-in-out;
                     width: 0%;
@@ -347,18 +305,15 @@
                     left: 0;
                     background-color: $secondary;
                 }
-
-                &:hover{
+                &:hover {
                     cursor: pointer;
-
-                    &::after{
+                    &::after {
                         width: 100%;
                     }
                 }
             }
         }
     }
-
     .Background {
         width: 100%;
         position: absolute;
@@ -582,4 +537,3 @@
         }
     }
 }
-

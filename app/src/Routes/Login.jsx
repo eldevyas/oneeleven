@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
+import {useAuth} from '../Contexts/AuthContext'
 import '../Dist/login.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -39,27 +40,52 @@ const Background = () => {
 
 
 function Login() {
-    const label = { inputProps: { 'aria-label': 'Remember Me' } };
+
+    const usernameRef = useRef();
+    const emailRef = useRef();
+    const passwordRef = useRef();
+    const { login, currentUser } = useAuth();
+    const [error, setError] = useState('')
+    const [loading, setLoading] = useState('')
+
     let navigate = useNavigate();
     const Register = () => { 
         let path = `/register`; 
         navigate(path);
     }
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+
+        try {
+            setError('')
+            setLoading(true)
+            await login(emailRef.current.value, passwordRef.current.value)
+            navigate('/')
+        } catch {
+            setError('Failed to log in')
+        }
+        setLoading(false)
+
+    }
+
+    
     return (
-        <div class="Login">
+        <div className="Login">
             <Background/>
             <div className='Login-Container'>
                 <h1>Login to your account</h1>
-
-                <form>
+                {currentUser && currentUser.email}
+                {error &&  alert(error)}
+                <form onSubmit={handleSubmit}>
                     <label className='Username'>
                         <span><AccountCircleOutlinedIcon/></span>
-                        <input type='text' placeholder='Username'/>
+                        <input type='text' placeholder='Username' ref={emailRef}/>
                     </label>
 
                     <label className='Password'>
                         <span><LockOutlinedIcon/></span>
-                        <input type='password' placeholder='Password'/>
+                        <input type='password' placeholder='Password' ref={passwordRef}/>
                     </label>
 
                     <div className='RememberMe'>
@@ -67,7 +93,7 @@ function Login() {
                         <label>Remember me</label>
                     </div>
 
-                    <button type='button'>Sign in</button>
+                    <button type='submit'>Sign in</button>
                     <div className='Reset'>
                         <p>Forgot password? <span>Reset</span></p>
                     </div>

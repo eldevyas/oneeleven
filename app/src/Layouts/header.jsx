@@ -66,12 +66,20 @@ function Buttons() {
     );
 }
 
+const Profile = () => {
+    return (
+        <div className="Profile">
+            
+        </div>
+    )
+}
+
 function DesktopComponent(){
     return (
         <div className="Header">
                 <Logo/>
                 <Menu/>
-                <Buttons />
+                <Profile />
         </div>
     )
 }
