@@ -5,6 +5,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
 
+
 import Fill1 from '../Assets/svg/Background/Fill 1.svg'
 import Fill2 from '../Assets/svg/Background/Fill 2.svg'
 import Fill3 from '../Assets/svg/Background/Fill 3.svg'
@@ -38,6 +39,7 @@ const Background = () => {
 
 
 function Login() {
+    const label = { inputProps: { 'aria-label': 'Remember Me' } };
     let navigate = useNavigate();
     const Register = () => { 
         let path = `/register`; 
@@ -60,7 +62,15 @@ function Login() {
                         <input type='password' placeholder='Password'/>
                     </label>
 
+                    <div className='RememberMe'>
+                        <input type='checkbox'/>            
+                        <label>Remember me</label>
+                    </div>
+
                     <button type='button'>Sign in</button>
+                    <div className='Reset'>
+                        <p>Forgot password? <span>Reset</span></p>
+                    </div>
                 </form>
 
                 <div className='API'>

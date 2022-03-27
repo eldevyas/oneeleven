@@ -1,7 +1,11 @@
-import React from 'react'
+import React, {useRef} from 'react'
+
+import {useAuth} from '../Contexts/AuthContext'
+
 import '../Dist/register.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import LockResetIcon from '@mui/icons-material/LockReset';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
@@ -39,6 +43,22 @@ const Background = () => {
 
 function Register() {
 
+    const   usernameRef = useRef(),
+            emailRef = useRef(),
+            passwordRef = useRef(),
+            passwordConfirmationRef = useRef(),
+            { signup } = useAuth();
+
+    function handleSubmit(e) {
+        e.preventDefault()
+
+        if (password){
+            
+        }
+
+        signup(emailRef.current.value, passwordRef.current.value)
+    }
+
     let navigate = useNavigate(); 
     const Login = () => { 
         let path = `/login`; 
@@ -54,20 +74,25 @@ function Register() {
                 <form>
                     <label className='Username'>
                         <span><AccountCircleOutlinedIcon/></span>
-                        <input type='text' placeholder='Username'/>
+                        <input type='text' placeholder='Username' ref={usernameRef} required/>
                     </label>
 
                     <label className='E-mail'>
                         <span><EmailOutlinedIcon/></span>
-                        <input type='email' placeholder='E-mail'/>
+                        <input type='email' placeholder='E-mail' ref={emailRef} required/>
                     </label>
  
                     <label className='Password'>
                         <span><LockOutlinedIcon/></span>
-                        <input type='password' placeholder='Password'/>
+                        <input type='password' placeholder='Password' ref={passwordRef} required/>
                     </label>
 
-                    <button type='button'>Sign in</button>
+                    <label className='RepeatPassword'>
+                        <span><LockResetIcon/></span>
+                        <input type='password' placeholder='Repeat Password' ref={passwordConfirmationRef} required/>
+                    </label>
+
+                    <button type='submit'>Sign up</button>
                 </form>
 
                 <div className='API'>
