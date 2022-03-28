@@ -4,9 +4,7 @@ import {getRandomColor,createImageFromInitials} from './../Components/Utils/Prof
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-
-
+import {auth} from '../firebase'
 
 function Logo() {
     return (
@@ -72,7 +70,8 @@ function Buttons() {
 
 
 function ProfilePic() {
-	let name = "John Smith";
+    let user = auth.currentUser;
+	let name = 'Yassine Chettouch';
 	let imgSrc = "";
 
 	return (
@@ -90,8 +89,10 @@ function ProfilePic() {
 }
 
 const Username = () => {
+    let user = auth.currentUser;
+    let name = 'Yassine';
     return(
-        <div className='Username'>John Smith</div>
+        <div className='Username'>{name}</div>
     )
 }
 
@@ -103,6 +104,14 @@ const Panel = () => {
         navigate(path);
     }
 
+    function signOut() {
+        auth.signOut().then(function() {
+            Login();
+        }).catch(function(error) {
+            alert("Error while logging out")
+        });
+    }
+
     return(
         <div className='Panel' id='Panel'>
             <div className='Item Saved'>
@@ -110,7 +119,7 @@ const Panel = () => {
                 <p>Saved</p>
             </div>
 
-            <div className='Item Logout' onClick={Login}>
+            <div className='Item Logout' onClick={signOut}>
                 <LogoutIcon/>
                 <p>Logout</p>
             </div>
@@ -162,7 +171,7 @@ const Profile = () => {
 
 
 
-function DesktopComponent(){
+const UserloggedIn = () => {
     return (
         <div className="Header">
                 <Logo/>
@@ -171,6 +180,28 @@ function DesktopComponent(){
         </div>
     )
 }
+
+const UserloggedOut = () => {
+    return (
+        <div className="Header">
+                <Logo/>
+                <Menu/>
+                <Buttons />
+        </div>
+    )
+}
+
+const DesktopComponent = () => {
+    const [isLoggedin, setIsLoggedIn] = React.useState(false);
+    auth.onAuthStateChanged(function(user) {
+      setIsLoggedIn(!!user);
+    });
+    return (
+      <>
+        {isLoggedin ? (<UserloggedIn />) : (<UserloggedOut/>)}
+      </>
+    )
+  }
 
 
 function MobileComponent() {

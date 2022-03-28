@@ -9,8 +9,8 @@ function CheckAttitude() {
     }
 }
 
-function GoToTop(){
-    $("#BtnTop").click(function(event){
+function GoToTop() {
+    $("#BtnTop").click(function(event) {
         $('html, body').animate({
             scrollTop: 0
         }, 800, function() {
@@ -21,8 +21,9 @@ function GoToTop(){
 
 
 
-$('document').ready(function(){
-    window.addEventListener('scroll', CheckAttitude);
+$('document').ready(function() {
+    window.addEventListener('scroll', function() {
+        CheckAttitude();
+    });
     GoToTop();
 })
-

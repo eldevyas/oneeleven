@@ -1,4 +1,5 @@
 import React, {useRef, useState} from 'react'
+import { getAuth, updateProfile } from "firebase/auth";
 
 import {useAuth} from '../Contexts/AuthContext'
 import '../Dist/register.css'
@@ -8,6 +9,9 @@ import LockResetIcon from '@mui/icons-material/LockReset';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
+
+import {getRandomColor,createImageFromInitials} from './../Components/Utils/Profile'
+
 
 import Fill1 from '../Assets/svg/Background/Fill 1.svg'
 import Fill2 from '../Assets/svg/Background/Fill 2.svg'
@@ -37,10 +41,7 @@ const Background = () => {
 }
 
 
-
-
 function Register() {
-
     const usernameRef = useRef();
     const emailRef = useRef();
     const passwordRef = useRef();
@@ -55,8 +56,6 @@ function Register() {
         navigate(path);
     }
 
-    
-
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -68,7 +67,14 @@ function Register() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            Login();
+            updateProfile(auth.currentUser, {
+                displayName: usernameRef.current.value, photoURL: createImageFromInitials(500, usernameRef.current.value, getRandomColor())
+              }).then(() => {
+                Login();
+              }).catch((error) => {
+                alert(error)
+            });
+            
         } catch {
             setError('Failed to create an account')
         }
