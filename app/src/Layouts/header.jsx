@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import { useNavigate } from "react-router-dom";
-
-
+import {getRandomColor,createImageFromInitials} from './../Components/Utils/Profile'
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import LogoutIcon from '@mui/icons-material/Logout';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
@@ -66,13 +68,99 @@ function Buttons() {
     );
 }
 
-const Profile = () => {
-    return (
-        <div className="Profile">
-            
+
+
+
+function ProfilePic() {
+	let name = "John Smith";
+	let imgSrc = "";
+
+	return (
+        <img
+            id='ProfilePicture'
+            src={
+                imgSrc.length <= 0
+                    ? createImageFromInitials(500, name, getRandomColor())
+                    : imgSrc
+            }
+            alt='profile-pic'
+            className='User'
+        />
+	);
+}
+
+const Username = () => {
+    return(
+        <div className='Username'>John Smith</div>
+    )
+}
+
+const Panel = () => {
+
+    let navigate = useNavigate(); 
+    const Login = () => { 
+        let path = `/login`; 
+        navigate(path);
+    }
+
+    return(
+        <div className='Panel' id='Panel'>
+            <div className='Item Saved'>
+                <FavoriteIcon/>
+                <p>Saved</p>
+            </div>
+
+            <div className='Item Logout' onClick={Login}>
+                <LogoutIcon/>
+                <p>Logout</p>
+            </div>
         </div>
     )
 }
+
+const Profile = () => {
+    let Expanded = false; 
+
+    
+
+    function showPanel(){
+        $('.Profile').css('border-radius', '10px 10px 0 0')
+        $('#Panel').css('height', '100px');
+        $('#Panel').css('opacity', '1');
+        $('#Panel').css('visibility', 'visible');
+
+    }
+
+    function hidePanel(){
+        $('.Profile').css('border-radius', '10px')
+        $('#Panel').css('height', '0px');
+        $('#Panel').css('opacity', '0');
+        $('#Panel').css('visibility', 'hidden');
+
+    }
+
+    function TogglePanel(){
+        if (Expanded === false){
+            showPanel();
+            Expanded = true;
+        }
+        else if (Expanded === true){
+            hidePanel();
+            Expanded = false;
+        }
+    }
+
+    return (
+        <div className="Profile">
+            <ExpandMoreIcon id='Icon' onClick={TogglePanel}/>
+            <Username/>
+            <ProfilePic />
+            <Panel/>
+        </div>
+    )
+}
+
+
 
 function DesktopComponent(){
     return (

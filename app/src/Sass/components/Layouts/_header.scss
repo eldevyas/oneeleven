@@ -10,10 +10,12 @@
     margin-top: 50px;
     /* --- Logo --- */
     .Logo {
-        width: 150px !important;
         height: auto;
+        width: 135px;
         justify-self: flex-start;
         cursor: pointer;
+        flex: 1.5;
+        max-width: 175px;
     }
     /* --- Menu --- */
     /*--------------- OPEN STATE ---------------*/
@@ -65,6 +67,8 @@
         justify-content: space-between;
         align-items: center;
         justify-self: flex-end;
+        flex: 1.5;
+        max-width: 175px;
         .Sign-in,
         .Sign-up {
             position: relative;
@@ -116,13 +120,100 @@
             }
         }
     }
+
+    .Profile{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-self: flex-end;
+        flex: 1.5;
+        max-width: 175px;
+        height: 40%;
+        background-color: rgba(255, 255,255, 0.025);
+        border-radius: 10px;
+        padding: 0 10px;
+        user-select: none;
+
+        #Icon{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .Username{
+            font-size: 12px;
+            color: rgb(255, 255, 255);
+            mix-blend-mode: difference;
+            text-align: center;
+        }
+
+        .User{
+            height: 70%;
+            width: auto;
+            object-fit: cover;
+            border-radius: 50px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .Panel {
+            position: absolute;
+            transition: all 0.5s ease-in-out;
+            height: 0;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 0 0 10px 10px;
+            opacity: 0;
+            visibility: hidden;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+
+            .Item{
+                height: 40px;
+                width: 90%;
+                background-color: rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+                color: rgb(100, 100, 100);
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                font-size: 14px;
+
+                svg{
+                    height: 18px;
+                    width: auto;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    color: #fff;
+                    background-color: $secondary;
+                }
+            }
+        }
+        
+    }
     /* --- Menu --- */
     .Menu {
         display: flex;
         flex-direction: row;
-        width: 50%;
         justify-content: space-between;
         align-items: center;
+        flex: 4;
+        margin: 0 40px;
+        max-width: 50%;
         a {
             position: relative;
             font-weight: 500;
