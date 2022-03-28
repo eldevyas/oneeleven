@@ -90,7 +90,7 @@ function ProfilePic() {
 
 const Username = () => {
     let user = auth.currentUser;
-    let name = 'Yassine';
+    let name = auth.currentUser.email;
     return(
         <div className='Username'>{name}</div>
     )

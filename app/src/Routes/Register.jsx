@@ -1,5 +1,23 @@
 import React, {useRef, useState} from 'react'
 import { getAuth, updateProfile } from "firebase/auth";
+import { getDatabase } from "firebase/database";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore';
+
+
+const  application =  firebase.initializeApp({
+    apiKey: "AIzaSyAAg4AXsSJqO9MlQ90ejw5VyETYIE0gvi0",
+    authDomain: "oneeleven-8b18d.firebaseapp.com",
+    databaseURL: "https://oneeleven-8b18d-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "oneeleven-8b18d",
+    storageBucket: "oneeleven-8b18d.appspot.com",
+    messagingSenderId: "473027161799",
+    appId: "1:473027161799:web:f44ee8f4efa5a9b14c98e2",
+    measurementId: "G-C8FCKZ372B"
+
+});
+const database = getDatabase(application);
+console.log(database)
 
 import {useAuth} from '../Contexts/AuthContext'
 import '../Dist/register.css'
@@ -56,6 +74,11 @@ function Register() {
         navigate(path);
     }
 
+    const Home = () => { 
+        let path = `/`; 
+        navigate(path);
+    }
+
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -67,20 +90,12 @@ function Register() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            updateProfile(auth.currentUser, {
-                displayName: usernameRef.current.value, photoURL: createImageFromInitials(500, usernameRef.current.value, getRandomColor())
-              }).then(() => {
-                Login();
-              }).catch((error) => {
-                alert(error)
-            });
+            Home()
             
         } catch {
             setError('Failed to create an account')
         }
         setLoading(false)
-
-        
     }
 
     
@@ -90,7 +105,6 @@ function Register() {
             <Background/>
             <div className='Register-Container'>
                 <h1>Create a new account</h1>
-                {currentUser && currentUser.email}
                 {error &&  alert(error)}
 
                 <form onSubmit={handleSubmit}>

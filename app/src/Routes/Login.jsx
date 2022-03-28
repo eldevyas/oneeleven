@@ -75,7 +75,6 @@ function Login() {
             <Background/>
             <div className='Login-Container'>
                 <h1>Login to your account</h1>
-                {currentUser && currentUser.email}
                 {error &&  alert(error)}
                 <form onSubmit={handleSubmit}>
                     <label className='Username'>
