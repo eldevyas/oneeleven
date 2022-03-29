@@ -79,12 +79,12 @@ function Login() {
                 <form onSubmit={handleSubmit}>
                     <label className='Username'>
                         <span><AccountCircleOutlinedIcon/></span>
-                        <input type='text' placeholder='Username' ref={emailRef}/>
+                        <input type='email' placeholder='Username' ref={emailRef} required/>
                     </label>
 
                     <label className='Password'>
                         <span><LockOutlinedIcon/></span>
-                        <input type='password' placeholder='Password' ref={passwordRef}/>
+                        <input type='password' placeholder='Password' ref={passwordRef} required/>
                     </label>
 
                     <div className='RememberMe'>
@@ -97,7 +97,6 @@ function Login() {
                         <p>Forgot password? <span>Reset</span></p>
                     </div>
                 </form>
-
                 <div className='API'>
                     <div className='Continue'>
                         <hr/>

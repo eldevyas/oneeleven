@@ -3,21 +3,8 @@ import { getAuth, updateProfile } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+import {auth} from '../firebase'
 
-
-const  application =  firebase.initializeApp({
-    apiKey: "AIzaSyAAg4AXsSJqO9MlQ90ejw5VyETYIE0gvi0",
-    authDomain: "oneeleven-8b18d.firebaseapp.com",
-    databaseURL: "https://oneeleven-8b18d-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "oneeleven-8b18d",
-    storageBucket: "oneeleven-8b18d.appspot.com",
-    messagingSenderId: "473027161799",
-    appId: "1:473027161799:web:f44ee8f4efa5a9b14c98e2",
-    measurementId: "G-C8FCKZ372B"
-
-});
-const database = getDatabase(application);
-console.log(database)
 
 import {useAuth} from '../Contexts/AuthContext'
 import '../Dist/register.css'
@@ -90,8 +77,15 @@ function Register() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
+
+            auth.currentUser.updateProfile({
+                displayName: usernameRef.current.value
+              }).then(() => {
+                console.log('Username is: ' + auth.currentUser.displayName)
+              }).catch((error) => {
+                console.log('An error was occured while updating the profile.')
+            });
             Home()
-            
         } catch {
             setError('Failed to create an account')
         }

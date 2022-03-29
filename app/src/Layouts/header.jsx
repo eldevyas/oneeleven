@@ -70,7 +70,7 @@ function Buttons() {
 
 
 function ProfilePic() {
-    let user = auth.currentUser;
+    let user = auth.currentUser.displayName ;
 	let name = 'Yassine Chettouch';
 	let imgSrc = "";
 
@@ -79,7 +79,7 @@ function ProfilePic() {
             id='ProfilePicture'
             src={
                 imgSrc.length <= 0
-                    ? createImageFromInitials(500, name, getRandomColor())
+                    ? createImageFromInitials(500, user, getRandomColor())
                     : imgSrc
             }
             alt='profile-pic'
@@ -89,8 +89,7 @@ function ProfilePic() {
 }
 
 const Username = () => {
-    let user = auth.currentUser;
-    let name = auth.currentUser.email;
+    let name = auth.currentUser.displayName;
     return(
         <div className='Username'>{name}</div>
     )
