@@ -1,10 +1,12 @@
 import React, {useRef, useState} from 'react'
 import {useAuth} from '../Contexts/AuthContext'
-import '../Dist/login.css'
+import '../Dist/login.min.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
+import {auth, authentication} from '../firebase'
+import { updateProfile, getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 
 
 import Fill1 from '../Assets/svg/Background/Fill 1.svg'
@@ -36,7 +38,12 @@ const Background = () => {
     )
 }
 
-
+const Error = () => {
+    return(
+    <div className="Error">
+    </div>
+    )
+}
 
 
 function Login() {
@@ -69,7 +76,33 @@ function Login() {
 
     }
 
-    
+    const SignInWithGoogle = () => {
+        const Google = new GoogleAuthProvider();
+        signInWithPopup(authentication, Google)
+        .then((re) => {
+            console.log(re)
+        })
+        .catch((err) => {
+            return console.log(err)
+        })
+
+        navigate('/')
+    }
+
+    function SignInWithFacebook() {
+        const Facebook = new FacebookAuthProvider();
+        signInWithPopup(authentication, Facebook)
+        .then((re) => {
+            console.log(re)
+        })
+        .catch((err) => {
+            return console.log(err)
+        })
+
+        navigate('/')
+    }
+
+
     return (
         <div className="Login">
             <Background/>
@@ -105,12 +138,12 @@ function Login() {
                     </div>
 
                     <div className='Choice'>
-                        <div className='Company Facebook'>
+                        <div className='Company Facebook' onClick={SignInWithFacebook}>
                             <img src={Facebook}/>
                             <p>Facebook</p>
                         </div>
 
-                        <div className='Company Google'>
+                        <div className='Company Google' onClick={SignInWithGoogle}>
                             <img src={Google}/>
                             <p>Google</p>
                         </div>

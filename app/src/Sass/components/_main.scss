@@ -9,6 +9,15 @@
     * {
         transition: font-size 0.5s ease-in-out;
     }
+    .Push {
+        background-color: #151515;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1 {
+            font-size: 18px;
+        }
+    }
     .container {
         height: 300px;
         display: flex;

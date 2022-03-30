@@ -71,14 +71,13 @@ function Buttons() {
 
 function ProfilePic() {
     let user = auth.currentUser.displayName ;
-	let name = 'Yassine Chettouch';
-	let imgSrc = "";
-
+	let imgSrc = auth.currentUser.photoURL;
+    console.log(imgSrc);
 	return (
         <img
             id='ProfilePicture'
             src={
-                imgSrc.length <= 0
+                imgSrc == null
                     ? createImageFromInitials(500, user, getRandomColor())
                     : imgSrc
             }
@@ -89,7 +88,7 @@ function ProfilePic() {
 }
 
 const Username = () => {
-    let name = auth.currentUser.displayName;
+    let name = auth.currentUser.displayName.replace(/ .*/,'');
     return(
         <div className='Username'>{name}</div>
     )
@@ -200,7 +199,7 @@ const DesktopComponent = () => {
         {isLoggedin ? (<UserloggedIn />) : (<UserloggedOut/>)}
       </>
     )
-  }
+}
 
 
 function MobileComponent() {
@@ -262,25 +261,17 @@ function MobileComponent() {
 }
 
 const ResponsiveHeader = () => {
-    // Declare a new state variable with the "useState" Hook
     const [width, setWidth] = React.useState(window.innerWidth);
     const breakpoint = 990;
-  
+
     React.useEffect(() => {
-      /* Inside of a "useEffect" hook add an event listener that updates
-         the "width" state variable when the window size changes */
       window.addEventListener("resize", () => setWidth(window.innerWidth));
-  
-      /* passing an empty array as the dependencies of the effect will cause this
-         effect to only run when the component mounts, and not each time it updates.
-         We only want the listener to be added once */
     }, []);
   
     return width < breakpoint ? <MobileComponent /> : <DesktopComponent />;
   }
 
 function Header() {
-    
     return (
         <ResponsiveHeader/>
     )

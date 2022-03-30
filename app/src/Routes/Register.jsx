@@ -1,13 +1,14 @@
 import React, {useRef, useState} from 'react'
-import { getAuth, updateProfile } from "firebase/auth";
-import { getDatabase } from "firebase/database";
+import { updateProfile, getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-import {auth} from '../firebase'
+import {auth, authentication} from '../firebase'
+
+
 
 
 import {useAuth} from '../Contexts/AuthContext'
-import '../Dist/register.css'
+import '../Dist/register.min.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LockResetIcon from '@mui/icons-material/LockReset';
@@ -46,6 +47,7 @@ const Background = () => {
 }
 
 
+
 function Register() {
     const usernameRef = useRef();
     const emailRef = useRef();
@@ -81,17 +83,41 @@ function Register() {
             auth.currentUser.updateProfile({
                 displayName: usernameRef.current.value
               }).then(() => {
-                console.log('Username is: ' + auth.currentUser.displayName)
               }).catch((error) => {
-                console.log('An error was occured while updating the profile.')
+                console.log('An error was occured while updating the profile: ' + error)
             });
-            Home()
         } catch {
             setError('Failed to create an account')
         }
+        Home()
         setLoading(false)
     }
 
+    const SignInWithGoogle = () => {
+        const Google = new GoogleAuthProvider();
+        signInWithPopup(authentication, Google)
+        .then((re) => {
+            console.log(re)
+        })
+        .catch((err) => {
+            return console.log(err)
+        })
+
+        Home()
+    }
+
+    function SignInWithFacebook() {
+        const Facebook = new FacebookAuthProvider();
+        signInWithPopup(authentication, Facebook)
+        .then((re) => {
+            console.log(re)
+        })
+        .catch((err) => {
+            return console.log(err)
+        })
+
+        Home()
+    }
     
 
     return (
@@ -133,12 +159,12 @@ function Register() {
                     </div>
 
                     <div className='Choice'>
-                        <div className='Company Facebook'>
+                        <div className='Company Facebook' onClick={SignInWithFacebook}>
                             <img src={Facebook}/>
                             <p>Facebook</p>
                         </div>
 
-                        <div className='Company Google'>
+                        <div className='Company Google' onClick={SignInWithGoogle}>
                             <img src={Google}/>
                             <p>Google</p>
                         </div>

@@ -11,6 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    #Success {
+        background-color: #151515;
+        transition: all 0.6s ease-in-out;
+        position: absolute;
+        z-index: 1000;
+        font-size: 15px;
+        top: -10%;
+    }
     .Login-Container {
         width: 450px;
         height: 650px;
