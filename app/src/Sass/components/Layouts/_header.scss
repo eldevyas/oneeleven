@@ -120,8 +120,7 @@
             }
         }
     }
-
-    .Profile{
+    .Profile {
         position: relative;
         display: flex;
         justify-content: space-between;
@@ -130,35 +129,30 @@
         flex: 1.5;
         max-width: 175px;
         height: 40%;
-        background-color: rgba(255, 255,255, 0.025);
+        background-color: rgba(255, 255, 255, 0.025);
         border-radius: 10px;
         padding: 0 10px;
         user-select: none;
-
-        #Icon{
-            &:hover{
+        #Icon {
+            &:hover {
                 cursor: pointer;
             }
         }
-
-        .Username{
+        .Username {
             font-size: 12px;
             color: rgb(255, 255, 255);
             mix-blend-mode: difference;
             text-align: center;
         }
-
-        .User{
+        .User {
             height: 70%;
             width: auto;
             object-fit: cover;
             border-radius: 50px;
-
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
         }
-
         .Panel {
             position: absolute;
             transition: all 0.5s ease-in-out;
@@ -171,39 +165,32 @@
             border-radius: 0 0 10px 10px;
             opacity: 0;
             visibility: hidden;
-
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             height: 100%;
-
-            .Item{
+            .Item {
                 height: 40px;
                 width: 90%;
                 background-color: rgba(0, 0, 0, 0.5);
                 border-radius: 10px;
                 color: rgb(100, 100, 100);
-
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-
                 font-size: 14px;
-
-                svg{
+                svg {
                     height: 18px;
                     width: auto;
                 }
-
-                &:hover{
+                &:hover {
                     cursor: pointer;
                     color: #fff;
                     background-color: $secondary;
                 }
             }
         }
-        
     }
     /* --- Menu --- */
     .Menu {
@@ -238,6 +225,36 @@
             &:hover {
                 cursor: pointer;
                 color: #fff;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+        .active {
+            position: relative;
+            font-weight: 500;
+            font-size: 14px;
+            padding: 0px 0px;
+            transition: all 0.5s ease-in-out;
+            animation: Unvisible 0.5s ease forwards;
+            z-index: 2 !important;
+            color: $secondary;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                bottom: -3px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $secondary;
+                transition: all 0.5s ease-in-out;
+                z-index: 1;
+                border-radius: 0px 0px 2.5px 2.5px;
+            }
+            &:hover {
+                cursor: pointer;
+                color: $secondary;
                 &::before {
                     width: 100%;
                 }

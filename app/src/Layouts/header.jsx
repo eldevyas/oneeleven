@@ -33,7 +33,7 @@ function Menu() {
     
     return (
         <div className="Menu">
-            <a>Home</a>
+            <a className='active'>Home</a>
             <a>Projects</a>
             <div className= "nav-toggle open" id="Switch" onClick={Toggle}>
                 <div></div>
@@ -249,7 +249,7 @@ function MobileComponent() {
             </div>
 
             <div className="NavMobile">
-                <a>Home</a>
+                <a className='active'>Home</a>
                 <a>Projects</a>
                 <a>About</a>
                 <a>Contact</a>

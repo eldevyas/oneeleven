@@ -10,12 +10,42 @@
         transition: font-size 0.5s ease-in-out;
     }
     .Push {
+        position: relative;
         background-color: #151515;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
+        padding: 0 50px;
         align-items: center;
-        h1 {
-            font-size: 18px;
+        width: 50%;
+        height: 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        color: #151515;
+        &::before {
+            content: '';
+            width: 15px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: $green;
+            border-radius: 10px 0 0 10px;
+        }
+        .Tex† {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 40%;
+            text-align: start;
+            h3 {
+                font-size: 20px;
+                text-align: left !important;
+            }
+            p {
+                font-size: 14px;
+                text-align: left;
+            }
         }
     }
     .container {

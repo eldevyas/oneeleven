@@ -8,7 +8,7 @@ import {auth, authentication} from '../firebase'
 
 
 import {useAuth} from '../Contexts/AuthContext'
-import '../Dist/register.min.css'
+import '../Dist/Pages/register.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LockResetIcon from '@mui/icons-material/LockReset';
@@ -86,10 +86,10 @@ function Register() {
               }).catch((error) => {
                 console.log('An error was occured while updating the profile: ' + error)
             });
+            Home()
         } catch {
             setError('Failed to create an account')
         }
-        Home()
         setLoading(false)
     }
 

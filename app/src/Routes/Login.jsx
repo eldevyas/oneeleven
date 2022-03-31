@@ -1,6 +1,6 @@
 import React, {useRef, useState} from 'react'
 import {useAuth} from '../Contexts/AuthContext'
-import '../Dist/login.min.css'
+import '../Dist/Pages/login.css'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';

@@ -1,6 +1,6 @@
 import React, { Component , useState } from 'react'
 
-import '../Dist/index.min.css'
+import '../Dist/Pages/index.css'
 import Header from '../Layouts/header'
 import Main from '../Components/main'
 import MainBackground from '../Components/mainBackground';
@@ -12,8 +12,7 @@ import Mailing from '../Components/mailing'
 import Footer from '../Layouts/footer'
 import TopButton from '../Layouts/topButton'
 
-import CheckIcon from '@mui/icons-material/Check';
-import {auth, authentication} from '../firebase'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';import {auth, authentication} from '../firebase'
 import { updateProfile, getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 
 
@@ -25,8 +24,19 @@ class LoggedInAs extends React.Component {
 
      return (
         <div className="Push">
-          <CheckIcon/>
-          <h1> Welcome back. { Name } ! </h1>
+          <div className="Icon">
+            <CheckCircleOutlineIcon/>
+          </div>
+          <div className="Text">
+            <h3>Success</h3>
+            <p> Logged in as { Name }.</p>
+          </div>
+
+          <div className="Close">
+            Close
+          </div>
+          
+          
         </div>
      )
  }
