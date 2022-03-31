@@ -10,7 +10,8 @@
         transition: font-size 0.5s ease-in-out;
     }
     .Push {
-        position: relative;
+        position: absolute;
+        top: 25%;
         background-color: #151515;
         display: flex;
         justify-content: flex-start;
@@ -21,6 +22,34 @@
         background-color: #fff;
         border-radius: 10px;
         color: #151515;
+        animation: Push 4s ease-in-out forwards;
+        @keyframes Push {
+            0% {
+                opacity: 0;
+                visibility: hidden;
+                top: -25%;
+            }
+            25% {
+                opacity: 1;
+                visibility: visible;
+                top: 25%;
+            }
+            50% {
+                opacity: 1;
+                visibility: visible;
+                top: 25%;
+            }
+            75% {
+                opacity: 1;
+                visibility: visible;
+                top: 25%;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+                top: -25%;
+            }
+        }
         &::before {
             content: '';
             width: 15px;
@@ -31,21 +60,50 @@
             background-color: $green;
             border-radius: 10px 0 0 10px;
         }
-        .Tex† {
+        .Icon {
+            color: $green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                font-size: 40px;
+            }
+        }
+        .Message {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: center;
             width: 40%;
             text-align: start;
+            margin-left: 20px;
             h3 {
                 font-size: 20px;
                 text-align: left !important;
+                color: $green !important;
             }
             p {
                 font-size: 14px;
                 text-align: left;
+                color: rgb(150, 150, 150);
             }
+        }
+        .Close {
+            width: 75px;
+            height: 100%;
+            border-left: 1px solid rgb(200, 200, 200);
+            color: rgb(200, 200, 200);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-self: flex-start;
+            align-self: center;
+            position: absolute;
+            right: 0;
+            font-size: 12px;
+        }
+        &:hover {
+            cursor: pointer;
         }
     }
     .container {

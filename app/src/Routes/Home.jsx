@@ -25,9 +25,9 @@ class LoggedInAs extends React.Component {
      return (
         <div className="Push">
           <div className="Icon">
-            <CheckCircleOutlineIcon/>
+            <CheckCircleOutlineIcon fontSize='large'/>
           </div>
-          <div className="Text">
+          <div className="Message">
             <h3>Success</h3>
             <p> Logged in as { Name }.</p>
           </div>
