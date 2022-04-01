@@ -22,6 +22,14 @@ class LoggedInAs extends React.Component {
 
      var Name = this.props.Name;
 
+     function HideNotification(){
+        console.log('Clicked')
+        $('.Push').css('animation-play-state', 'paused');
+        $('.Push').css('top', '-25%');
+        $('.Push').css('opacity', 0);
+        $('.Push').css('visibility', 'hidden');
+     }
+
      return (
         <div className="Push">
           <div className="Icon">
@@ -32,7 +40,7 @@ class LoggedInAs extends React.Component {
             <p> Logged in as { Name }.</p>
           </div>
 
-          <div className="Close">
+          <div className="Close" onClick={HideNotification}>
             Close
           </div>
           
