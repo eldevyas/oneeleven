@@ -26,6 +26,5 @@ const app = firebase.initializeApp({
 
 export const auth = app.auth();
 export default { app };
-
 export const authentication = getAuth(app);
-console.log(authentication)
+console.log(authentication);
