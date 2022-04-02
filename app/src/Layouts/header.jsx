@@ -5,11 +5,12 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {auth} from '../firebase'
+import LogoIMG from '/src/assets/img/logo.png'
 
 function Logo() {
     return (
       <img 
-      src={'/src/assets/img/logo.png'}
+      src={LogoIMG}
       alt="Logo"
       className="Logo"
       />
