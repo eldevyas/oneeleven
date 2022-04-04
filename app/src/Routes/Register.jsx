@@ -15,7 +15,7 @@ import LockResetIcon from '@mui/icons-material/LockReset';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
-
+import HomeIcon from '@mui/icons-material/Home';
 import {getRandomColor,createImageFromInitials} from './../Components/Utils/Profile'
 
 
@@ -63,9 +63,8 @@ function Register() {
         navigate(path);
     }
 
-    const Home = () => { 
-        let path = `/`; 
-        navigate(path);
+    const Home = () => {
+        navigate('/')
     }
 
     async function handleSubmit(e) {
@@ -124,7 +123,11 @@ function Register() {
         <div className="Register">
             <Background/>
             <div className='Register-Container'>
-                <h1>Create a new account</h1>
+
+                <div className='head'>
+                    <HomeIcon onClick={Home}/>
+                    <h1>Create a new account</h1>
+                </div>
                 {error &&  alert(error)}
 
                 <form onSubmit={handleSubmit}>

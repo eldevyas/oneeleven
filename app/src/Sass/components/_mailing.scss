@@ -13,7 +13,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        background-color: #101010;
+        background-color: $main;
         overflow: hidden;
         z-index: -1;
         .Fill1 {
@@ -98,32 +98,54 @@
                 top: 50%;
                 left: 2.5%;
                 transform: translateY(-110%);
-                color: $light-gray;
+                color: $color;
             }
             .Name,
             .E-mail {
-                color: $light-gray;
+                color: $color;
                 width: 100%;
                 padding: 0 60px;
                 height: 60px;
                 margin-bottom: 30px;
-                background-color: rgba(0, 0, 0, 0.75);
+                background-color: rgba(255, 255, 255, 0.05);
                 border: none;
                 border-radius: 50px;
                 &:focus {
                     outline: none;
+                }
+
+                &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: $color;
+                    opacity: 0.5;
+                }
+
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: $color;
+                    opacity: 0.5;
+                }
+                  
+                &::-ms-input-placeholder { /* Microsoft Edge */
+                    color: $color;
+                    opacity: 0.5;
                 }
             }
         }
         button {
             width: 100%;
             height: 60px !important;
-            background-color: rgba(255, 255, 255, 0.25);
+            background-color: $main;
+            filter: brightness(0.8);
+            opacity: 1;
             border: none;
             border-radius: 10px;
             backdrop-filter: blur(5px);
-            color: $light-gray;
+            color: $color;
             font-size: 15px;
+
+            &:hover{
+                cursor: pointer;
+                opacity: 0.8;
+            }
         }
     }
 }
