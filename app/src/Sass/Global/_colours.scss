@@ -1,9 +1,10 @@
-$main: #00932A;
+$main: #252A34;
+$secondary: #FFC600;
+$additional: #5800FF;
 $color: #fff;
-$secondary: #085902;
-$secondary-dark: #085902;
+$secondary-dark: $secondary;
 $body: #EDEDED;
-$secondary-shadow: #085902;
+$secondary-shadow: $secondary;
 $dark-gray: #2e2e2e;
 $dark-shadow-03: rgba(100, 100, 100, 0.3);
 $dark-shadow-01: rgba(100, 100, 100, 0.1);

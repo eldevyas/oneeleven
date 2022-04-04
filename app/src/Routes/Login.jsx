@@ -7,7 +7,7 @@ import Facebook from './../assets/svg/Facebook.svg';
 import Google from './../assets/svg/Google.svg';
 import {auth, authentication} from '../firebase'
 import { updateProfile, getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
-
+import HomeIcon from '@mui/icons-material/Home';
 
 import Fill1 from '../Assets/svg/Background/Fill 1.svg'
 import Fill2 from '../Assets/svg/Background/Fill 2.svg'
@@ -61,6 +61,10 @@ function Login() {
         navigate(path);
     }
 
+    const Home = () => {
+        navigate('/')
+    }
+
     async function handleSubmit(e) {
         e.preventDefault()
 
@@ -86,7 +90,7 @@ function Login() {
             return console.log(err)
         })
 
-        navigate('/')
+        Home()
     }
 
     function SignInWithFacebook() {
@@ -99,7 +103,7 @@ function Login() {
             return console.log(err)
         })
 
-        navigate('/')
+        Home()
     }
 
 
@@ -107,7 +111,10 @@ function Login() {
         <div className="Login">
             <Background/>
             <div className='Login-Container'>
-                <h1>Login to your account</h1>
+                <div className='head'>
+                    <HomeIcon onClick={Home}/>
+                    <h1>Login to your account</h1>
+                </div>
                 {error &&  alert(error)}
                 <form onSubmit={handleSubmit}>
                     <label className='Username'>
