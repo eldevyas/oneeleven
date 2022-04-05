@@ -8,6 +8,7 @@ import Google from './../assets/svg/Google.svg';
 import {auth, authentication} from '../firebase'
 import { updateProfile, getAuth, signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth";
 import HomeIcon from '@mui/icons-material/Home';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 import Fill1 from '../Assets/svg/Background/Fill 1.svg'
 import Fill2 from '../Assets/svg/Background/Fill 2.svg'
@@ -118,8 +119,8 @@ function Login() {
                 {error &&  alert(error)}
                 <form onSubmit={handleSubmit}>
                     <label className='Username'>
-                        <span><AccountCircleOutlinedIcon/></span>
-                        <input type='email' placeholder='Username' ref={emailRef} required/>
+                        <span><EmailOutlinedIcon/></span>
+                        <input type='email' placeholder='E-mail' ref={emailRef} required/>
                     </label>
 
                     <label className='Password'>
