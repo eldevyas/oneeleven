@@ -144,10 +144,11 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 990px) {
     .Main {
         width: 100% !important;
         .container {
+            width: 90% !important;
             .Text {
                 .title {
                     font-size: 20px !important;
@@ -159,25 +160,25 @@
                 .description {
                     font-size: 15px !important;
                     width: 100%;
-                    color: #fff !important;
                 }
             }
-        }
-        .Keywords {
-            display: flex;
-            flex-direction: column;
-            input[type="text"] {
-                width: 100% !important;
-                height: 30px !important;
-                border-radius: 50px !important;
-                font-size: 12px !important;
-            }
-            button {
-                width: 50% !important;
-                border-radius: 50px !important;
-                margin-top: 30px;
-                height: 30px !important;
-                font-size: 12px !important;
+            .Keywords {
+                flex-direction: column;
+                margin-bottom: 50px;
+                width: 100%;
+                .react-tag-input {
+                    width: 100% !important;
+                    height: 45px !important;
+                    font-size: 14px !important;
+                    margin-bottom: 20px;
+                }
+                .react-tag-input__input {
+                    font-size: 14px !important;
+                }
+                button {
+                    width: 50% !important;
+                    height: 45px !important;
+                }
             }
         }
     }

@@ -18,7 +18,7 @@ const Results = () => {
     return(
         <div className="Option">
             <div className="Rank">02</div>
-            <div className="Icon"><FavoriteBorderOutlinedIcon/></div>
+            <div className="Icon"><FilterAltOutlinedIcon/></div>
             <div className="Title">Filter Results</div>
             <div className="Text">Decide whether you prioritize a shorter name, having a specific keyword or domain extension</div>
         </div>
@@ -29,7 +29,7 @@ const Names = () => {
     return(
         <div className="Option">
             <div className="Rank">03</div>
-            <div className="Icon"><FilterAltOutlinedIcon/></div>
+            <div className="Icon"><FavoriteBorderOutlinedIcon/></div>
             <div className="Title">Save your names</div>
             <div className="Text">Our algorithm learns from the names you like, giving you better recommendations over time</div>
         </div>

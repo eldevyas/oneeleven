@@ -42,6 +42,7 @@ function Input() {
         readOnly={false}
         removeOnBackspace={true}
         maxTags={5}
+        autofocus
         validator={(value) => {
             const isValid = value.length <= 15 && value.includes(' ') != true;
             if (!isValid) {

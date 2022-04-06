@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     height: 140vh;
+    min-height: 1200px;
     position: absolute;
     top: 0;
     left: 0;
@@ -26,6 +27,7 @@
             background: $main;
             width: 100%;
             height: 140vh;
+            min-height: 1200px;
         }
         .Center {
             transform: translateY(-30vh);
@@ -292,10 +294,72 @@
 
 @media (max-width: 991px) {
     .MainBackground {
-        height: 70vh !important;
+        height: 90vh !important;
+        min-height: 500px;
         .Background {
             .Center {
                 transform: translateY(-52.5vh);
+            }
+            .Oval {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                bottom: -5%;
+                right: -25%;
+                background-color: transparent;
+                border-radius: 50%;
+                z-index: 0;
+                outline: 100px solid $secondary;
+                box-shadow: 0px 0px 80px $secondary-shadow;
+                &::before {
+                    content: "";
+                    width: calc(100% + 300px);
+                    height: calc(100% + 300px);
+                    background: transparent;
+                    position: absolute;
+                    border-radius: 50%;
+                    z-index: 100;
+                    box-shadow: 0px 0px 80px $secondary-shadow;
+                    animation: GlowOut 2s ease-in-out infinite 0ms;
+                    @keyframes GlowOut {
+                        0% {
+                            box-shadow: 0px 0px 40px $secondary-shadow;
+                        }
+                        50% {
+                            box-shadow: 0px 0px 30px $secondary-shadow;
+                        }
+                        100% {
+                            box-shadow: 0px 0px 40px $secondary-shadow;
+                        }
+                    }
+                }
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background: transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 50%;
+                    z-index: 100;
+                    box-shadow: inset 0px 0px 80px $secondary-shadow;
+                    animation: GlowIn 2s ease-in-out infinite 0ms;
+                    @keyframes GlowIn {
+                        0% {
+                            box-shadow: inset 0px 0px 80px $secondary-shadow;
+                        }
+                        50% {
+                            box-shadow: inset 0px 0px 80px $secondary-shadow;
+                        }
+                        100% {
+                            box-shadow: inset 0px 0px 80px $secondary-shadow;
+                        }
+                    }
+                }
             }
         }
     }

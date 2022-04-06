@@ -1,11 +1,10 @@
 function CheckAttitude() {
     if (window.pageYOffset > window.innerHeight) {
         $('#BtnTop').css('transform', 'translateX(0%)')
-        if (window.pageYOffset > (document.getElementsByClassName('Footer')[0].offsetTop - window.innerHeight)) {
+        if (window.pageYOffset > (document.getElementsByClassName('Footer')[0].offsetTop - window.innerHeight + $('#BtnTop').width() * 1.25)) {
             $('#BtnTop').css('background-color', '#fff')
             $('#Arrow').css('color', '#FFC600')
-        }
-        else {
+        } else {
             $('#BtnTop').css('background-color', '#FFC600')
             $('#Arrow').css('color', '#fff')
         }

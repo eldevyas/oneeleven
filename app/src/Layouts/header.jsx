@@ -82,7 +82,6 @@ function ProfilePic() {
                     ? createImageFromInitials(500, user, getRandomColor())
                     : imgSrc
             }
-            alt='profile-pic'
             className='User'
         />
 	);
