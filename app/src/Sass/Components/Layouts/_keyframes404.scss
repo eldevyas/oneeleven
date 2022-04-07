@@ -1,0 +1,18 @@
+// Push sidewards.
+@keyframes SpaceBetween-S1 {
+    from {
+        left: 100%;
+    }
+    to {
+        left: -30%;
+    }
+}
+
+@keyframes SpaceBetween-S3 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 30%;
+    }
+}
