@@ -4,6 +4,7 @@ import Home from './Routes/Home'
 import Login from './Routes/Login'
 import Register from './Routes/Register'
 import { AuthProvider } from './Contexts/AuthContext'
+import PageNotFound from './Routes/404'
 
 function App() {
     return(
@@ -12,9 +13,10 @@ function App() {
                 <div className="App">
                     <div className="Page">
                         <Routes>
-                            <Route exact path="/" element={<Home />}></Route>
-                            <Route path="/login" element={<Login />}></Route>
-                            <Route path="/register" element={<Register />}></Route>
+                            <Route exact path="/" element={ <Home/> }/>
+                            <Route path="/login" element={ <Login/> }/>
+                            <Route path="/register" element={ <Register/> }/>
+                            <Route path='*' element={ <PageNotFound/> }/>
                         </Routes>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {auth} from '../firebase'
 import LogoIMG from '/src/assets/img/logo.png'
+import { Link } from 'react-router-dom';
 
 function Logo() {
     return (
@@ -34,15 +35,15 @@ function Menu() {
     
     return (
         <div className="Menu">
-            <a className='active'>Home</a>
-            <a>Projects</a>
+            <Link className='active' to="/">Home</Link>
+            <Link to='/projects'>Projects</Link>
             <div className= "nav-toggle open" id="Switch" onClick={Toggle}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <a>About</a>
-            <a>Contact</a>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
         </div>
     )
 };
