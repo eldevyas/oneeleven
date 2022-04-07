@@ -18,12 +18,12 @@
         color: rgb(200, 60, 0);
         font-size: 5em;
         .S404 {
-            width: calc($S404-Width * 0.75);
-            height: calc($S404-Height * 0.75);
+            width: calc($S404-Width * 0.5);
+            height: calc($S404-Height * 0.5);
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .Shape {
+            .S1, .S3 {
                 width: 25%;
                 height: 100%;
                 position: relative;
@@ -44,12 +44,28 @@
                         position: absolute;
                         bottom: 0;
                         background: $Page404;
-                        filter: brightness(1.25);
                         width: 100%;
                         height: 30%;
                     }
                 }
                 .P3 {
+                    position: absolute;
+                    visibility: hidden;
+                    opacity: 0;
+                    width: 130%;
+                    height: 100%;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        background: $Page404;
+                        width: 100%;
+                        height: 30%;
+                    }
+                }
+
+                .P4 {
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -59,9 +75,8 @@
                         position: absolute;
                         bottom: 0;
                         background: $Page404;
-                        filter: brightness(1.25);
                         width: 100%;
-                        height: 30%;
+                        height: 100%;
                     }
                 }
             }
@@ -69,31 +84,162 @@
                 left: -10%;
                 .P1 {
                     left: 100%;
-                    animation: SpaceBetween-S1 1s ease-in-out forwards 2s;
+                    animation: SpaceBetween-S1 1s ease-in-out forwards 1s;
                 }
+
                 .P2 {
                     left: 100%;
-                    animation: SpaceBetween-S1 1s ease-in-out forwards 2s;
+                    animation: SpaceBetween-S1 1s ease-in-out forwards 1s;
                 }
+                
                 .P3 {
-                    left: 100%;
-                    animation: SpaceBetween-S1 1s ease-in-out forwards 2s;
+                    left: -30%;
+                    animation: PullToRight-S1-P3 500ms ease-in-out forwards 2s;
+                }
+
+                .P4 {
+                    left: 40%;
+                    bottom: -50%;
+
+                    &::after{
+                        visibility: hidden;
+                        opacity: 0;
+                        height: 0%;
+                        animation: AppendHeight-S-P4 500ms ease-in-out forwards 2.5s;
+                    }
                 }
             }
+
+            .S2{
+                position: relative;
+                width: 25%;
+                height: 100%;
+                .P1{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: $Page404;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                }
+
+                .P2{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: $Page404;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    bottom: 0%;
+                    left: 0%;
+                    animation: PullToBottom-S2-P2 500ms ease-in-out forwards 2.5s;
+                }
+
+
+
+
+                .P3{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    right: -132.5%;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        background: $Page404;
+                        width: 100%;
+                        height: 0%;
+                        animation: Fill-S2-P3-P4 500ms ease-in forwards 3s;
+                    }
+                }
+
+                .P4{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    bottom: -50%;
+                    right: -120%;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        background: $Page404;
+                        width: 100%;
+                        height: 0%;
+                        animation: Fill-S2-P3-P4 500ms ease-out forwards 3.30s;
+                    }
+                }
+
+                .P5{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    left: 60%;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        background: $Page404;
+                        width: 0%;
+                        height: 30%;
+                        animation: Fill-S2-P 500ms ease-in-out forwards 2.5s;
+                    }
+                }
+
+                .P6{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+                    bottom: -119.999999%;
+                    left: 42.5%;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        background: $Page404;
+                        width: 0%;
+                        height: 30%;
+                        animation: Fill-S2-P 500ms ease-in-out forwards 3.8s;
+                    }
+                }
+            }
+
+
+
+
             .S3 {
                 left: 10%;
                 .P1 {
                     left: -100%;
-                    animation: SpaceBetween-S3 1s ease-in-out forwards 2s;
+                    animation: SpaceBetween-S3 1s ease-in-out forwards 1s;
                 }
                 .P2 {
                     left: -100%;
-                    animation: SpaceBetween-S3 1s ease-in-out forwards 2s;
+                    animation: SpaceBetween-S3 1s ease-in-out forwards 1s;
                 }
                 .P3 {
-                    left: -100%;
-                    animation: SpaceBetween-S3 1s ease-in-out forwards 2s;
+                    left: 75%;
+                    animation: PullToRight-S3-P3 500ms ease-in-out forwards 2s;
+                }
+
+                .P4 {
+                    left: 185%;
+                    bottom: -50%;
+                    &::after{
+                        visibility: hidden;
+                        opacity: 0;
+                        height: 0%;
+                        animation: AppendHeight-S-P4 500ms ease-in-out forwards 2.5s;
+                    }
                 }
             }
         }
     }
+

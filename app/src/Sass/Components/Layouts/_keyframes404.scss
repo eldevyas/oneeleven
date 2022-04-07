@@ -1,10 +1,10 @@
-// Push sidewards.
+// 1st Move: Push sidewards.
 @keyframes SpaceBetween-S1 {
     from {
         left: 100%;
     }
     to {
-        left: -30%;
+        left: -75%;
     }
 }
 
@@ -13,6 +13,93 @@
         left: -100%;
     }
     to {
-        left: 30%;
+        left: 75%;
+    }
+}
+
+// 2nd Move: Pull the after element to the right side.
+
+@keyframes PullToRight-S1-P3 {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        left: -75%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        left: -15%;
+    }
+}
+
+@keyframes PullToRight-S3-P3 {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        left: 75%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        left: 135%;
+    }
+}
+
+// Third Move: Shape of number 4 completed.
+@keyframes AppendHeight-S-P4 {
+    from{
+        visibility: hidden;
+        opacity: 0;
+        height: 0%;
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+    }
+}
+
+
+
+// Exceptional Moves: the middle Zero
+
+// First Move: Align with the second move of the Four's.
+
+@keyframes PullToBottom-S2-P2 {
+    from {
+        bottom: 0%;
+        left: 0%;
+    }
+
+    to {
+        bottom: -50%;
+        left: -12.5%;
+    }
+}
+
+@keyframes Fill-S2-P {
+    from {
+        width: 0%;
+    }
+
+
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes Fill-S2-P3-P4 {
+    from {
+        height: 0%;
+    }
+
+
+
+    to {
+        height: 100%;
     }
 }

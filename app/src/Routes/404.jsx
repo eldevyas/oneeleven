@@ -10,12 +10,16 @@ const S404 = () => {
                 <div className='Parts P1'></div>
                 <div className="Parts P2"></div>
                 <div className="Parts P3"></div>
+                <div className="Parts P4"></div>
             </div>
 
             <div className='Shape S2'>
                 <div className='Parts P1'></div>
                 <div className="Parts P2"></div>
                 <div className="Parts P3"></div>
+                <div className="Parts P4"></div>
+                <div className="Parts P5"></div>
+                <div className="Parts P6"></div>
             </div>
 
 
@@ -23,6 +27,7 @@ const S404 = () => {
                 <div className='Parts P1'></div>
                 <div className="Parts P2"></div>
                 <div className="Parts P3"></div>
+                <div className="Parts P4"></div>
             </div>
         </div>    
     )
