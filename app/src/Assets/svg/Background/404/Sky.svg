@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.017" x2="0.5" y2="0.713" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c35407"/>
+      <stop offset="0.21" stop-color="#e89245"/>
+      <stop offset="0.26" stop-color="#e89448"/>
+      <stop offset="0.3" stop-color="#ea9b53"/>
+      <stop offset="0.34" stop-color="#eca462"/>
+      <stop offset="0.58" stop-color="#f6cca5"/>
+      <stop offset="0.78" stop-color="#fdead6"/>
+      <stop offset="0.81" stop-color="#fce7d2"/>
+      <stop offset="0.83" stop-color="#f9e0c8"/>
+      <stop offset="0.85" stop-color="#f4d2b5"/>
+      <stop offset="0.88" stop-color="#edc09c"/>
+      <stop offset="0.9" stop-color="#e4a87b"/>
+      <stop offset="0.92" stop-color="#d88b52"/>
+      <stop offset="0.94" stop-color="#cb6923"/>
+      <stop offset="0.94" stop-color="#ca661f"/>
+      <stop offset="0.97" stop-color="#c35407"/>
+    </linearGradient>
+  </defs>
+  <rect id="Sky" class="cls-1" width="1920" height="1080"/>
+</svg>

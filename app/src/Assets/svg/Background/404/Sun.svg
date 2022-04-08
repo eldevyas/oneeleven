@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1062.277" height="1062.277" viewBox="0 0 1062.277 1062.277">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="0.328" cy="0.678" r="0.756" gradientTransform="matrix(0.707, 0.707, -0.707, 0.707, 0.676, -0.138)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fab52a"/>
+      <stop offset="0.47" stop-color="#f9b329"/>
+      <stop offset="0.64" stop-color="#f5ac27"/>
+      <stop offset="0.76" stop-color="#eea123"/>
+      <stop offset="0.86" stop-color="#e5901d"/>
+      <stop offset="0.95" stop-color="#d97a15"/>
+      <stop offset="1" stop-color="#ce670e"/>
+    </radialGradient>
+  </defs>
+  <circle id="Sun" class="cls-1" cx="375.57" cy="375.57" r="375.57" transform="translate(0 531.139) rotate(-45)"/>
+</svg>
