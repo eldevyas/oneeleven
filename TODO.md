@@ -15,9 +15,13 @@
 [x]    13 - Improve Responsivity of the Website.  
 [x]    14 - Add HTML loading animation to the website before that React loads.  
 [x]    15 - Create Error 404 Page for the paths that does not exist (Using React-router-dom).  
-
+  
+---
+  
 ### In process:
 [ ]    16 - Design the About an Contact pages *(Keep it a simple design, less is more)*. 
-
+  
+---
+  
 ### Incompleted:
 [ ]    17 - Create the '/about' and '/contact' routes.  
