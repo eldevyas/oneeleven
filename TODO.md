@@ -22,7 +22,7 @@
 ---
   
 ### In process:
-- [ ]    16 - Design the About an Contact pages *(Keep it a simple design, less is more)*. 
+- [ ]    16 - Design the About and Contact pages *(Keep it a simple design, less is more)*. 
   
 ---
   
