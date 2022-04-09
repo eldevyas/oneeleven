@@ -1,4 +1,7 @@
 # To Do Tasks:
+  
+---
+ 
 ### Completed
 [x]    1 - Create the home page design in Sketch.  
 [x]    2 - Code the main home page components.  
