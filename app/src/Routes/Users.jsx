@@ -36,16 +36,25 @@ class Users extends Component {
             }]
         }
     }
+
+    componentDidMount() {
+        const fetchData = async () => {
+            fetch('')
+        }
+    }
+
+
+
     render() {
 
         return(
             <div className= 'UsersPage'>
-                <h1>List of users on the MySQL Database:</h1>
+                <h1>List of users on MySQL Database:</h1>
     
                 <div className='Container'>
                     <table>
                         <thead>
-                            <tr>
+                            <tr className='Head'>
                                 <th> Username</th>
                                 <th> User Email</th>
                                 <th> User Password</th>
