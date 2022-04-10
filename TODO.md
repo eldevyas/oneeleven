@@ -5,7 +5,7 @@
 ### Completed
 - [x]     1 - Create the home page design in Sketch.  
 - [x]     2 - Code the main home page components.  
-- [x]     3 - Create animations with *jQuery* and *SC- SS*.  
+- [x]     3 - Create animations with *jQuery* and *SCSS*.  
 - [x]     4 - Include React Router Dom on the website | Create the **'/Home'** , **'/Login'** & **'/Register'** routes.  
 - [x]     5 - Design the **Sign in** and **Sign up** pages.  
 - [x]     6 - Code both of the previous pages.  
@@ -18,13 +18,15 @@
 - [x]    13 - Improve Responsivity of the Website.  
 - [x]    14 - Add HTML loading animation to the website before that React loads.  
 - [x]    15 - Create Error 404 Page for the paths that does not exist (Using React-router-dom).  
+- [x]    16 - Complete the README file for my profile on github.
   
 ---
   
 ### In process:
-- [ ]    16 - Design the About an Contact pages *(Keep it a simple design, less is more)*. 
+- [ ]    17 - Try an API Connection between the backend and the front-end of this project.
+- [ ]    18 - Design the About and Contact pages *(Keep it a simple design, less is more)*. 
   
 ---
   
 ### Incompleted:
-- [ ]    17 - Create the '/about' and '/contact' routes.  
+- [ ]    19 - Create the '/about' and '/contact' routes. 

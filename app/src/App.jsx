@@ -5,7 +5,7 @@ import Login from './Routes/Login'
 import Register from './Routes/Register'
 import { AuthProvider } from './Contexts/AuthContext'
 import PageNotFound from './Routes/404'
-
+import Users from './Routes/Users'
 function App() {
     return(
         <AuthProvider>
@@ -16,6 +16,7 @@ function App() {
                             <Route exact path="/" element={ <Home/> }/>
                             <Route path="/login" element={ <Login/> }/>
                             <Route path="/register" element={ <Register/> }/>
+                            <Route path='/users' element={<Users/>}/>
                             <Route path='*' element={ <PageNotFound/> }/>
                         </Routes>
                     </div>
