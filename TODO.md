@@ -23,8 +23,12 @@
 ---
   
 ### In process:
+<<<<<<< HEAD
 - [ ]    17 - Try an API Connection between the backend and the front-end of this project.
 - [ ]    18 - Design the About and Contact pages *(Keep it a simple design, less is more)*. 
+=======
+- [ ]    16 - Design the About and Contact pages *(Keep it a simple design, less is more)*. 
+>>>>>>> 1cd18b16f66bba8f4a7c356a60bfadd909f80140
   
 ---
   
