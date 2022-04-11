@@ -19,8 +19,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        .Background{
+        .Background {
             padding: 0;
             margin: 0;
             position: absolute;
@@ -32,8 +31,6 @@
             overflow: hidden;
             height: 100vh;
             width: 100vw;
-
-
             .Sky {
                 display: block;
                 width: 100%;
@@ -44,7 +41,6 @@
                 left: 0;
                 object-fit: cover;
             }
-
             .Sun {
                 display: block;
                 height: 100vh;
@@ -52,7 +48,6 @@
                 width: auto;
                 position: absolute;
             }
-
             .Clouds {
                 display: block;
                 position: absolute;
@@ -61,7 +56,6 @@
                 height: 40vh;
                 top: 7.5vh;
             }
-
             .Desert {
                 display: block;
                 position: absolute;
@@ -71,7 +65,6 @@
                 bottom: -1%;
                 object-fit: contain;
             }
-
             .Caravan {
                 display: block;
                 position: absolute;
@@ -80,7 +73,6 @@
                 bottom: 0;
                 right: 5%;
             }
-
             .A404 {
                 position: absolute;
                 right: 12.5%;
@@ -90,7 +82,8 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                .S1, .S3 {
+                .S1,
+                .S3 {
                     width: 25%;
                     height: 100%;
                     position: relative;
@@ -131,7 +124,6 @@
                             height: 30%;
                         }
                     }
-    
                     .P4 {
                         position: absolute;
                         width: 100%;
@@ -153,22 +145,18 @@
                         left: 100%;
                         animation: SpaceBetween-S1 1s ease-in-out forwards 1s;
                     }
-    
                     .P2 {
                         left: 100%;
                         animation: SpaceBetween-S1 1s ease-in-out forwards 1s;
                     }
-                    
                     .P3 {
                         left: -30%;
                         animation: PullToRight-S1-P3 500ms ease-in-out forwards 2s;
                     }
-    
                     .P4 {
                         left: 42.5%;
                         bottom: -50%;
-    
-                        &::after{
+                        &::after {
                             visibility: hidden;
                             opacity: 0;
                             height: 0%;
@@ -176,20 +164,18 @@
                         }
                     }
                 }
-    
-                .S2{
+                .S2 {
                     position: relative;
                     width: 25%;
                     height: 100%;
-                    .P1{
+                    .P1 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         background: $Page404;
                         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                     }
-    
-                    .P2{
+                    .P2 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
@@ -199,17 +185,12 @@
                         left: 0%;
                         animation: PullToBottom-S2-P2 500ms ease-in-out forwards 2.5s;
                     }
-    
-    
-    
-    
-                    .P3{
+                    .P3 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                         right: -132.5%;
-    
                         &::after {
                             content: '';
                             position: absolute;
@@ -220,15 +201,13 @@
                             animation: Fill-S2-P3-P4 500ms ease-in forwards 3s;
                         }
                     }
-    
-                    .P4{
+                    .P4 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                         bottom: -50%;
                         right: -120%;
-    
                         &::after {
                             content: '';
                             position: absolute;
@@ -239,14 +218,12 @@
                             animation: Fill-S2-P3-P4 500ms ease-out forwards 3.30s;
                         }
                     }
-    
-                    .P5{
+                    .P5 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                         left: 60%;
-    
                         &::after {
                             content: '';
                             position: absolute;
@@ -257,15 +234,13 @@
                             animation: Fill-S2-P 500ms ease-in-out forwards 2.5s;
                         }
                     }
-    
-                    .P6{
+                    .P6 {
                         position: absolute;
                         width: 100%;
                         height: 100%;
                         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
                         bottom: -119.999999%;
                         left: 42.5%;
-    
                         &::after {
                             content: '';
                             position: absolute;
@@ -277,10 +252,6 @@
                         }
                     }
                 }
-    
-    
-    
-    
                 .S3 {
                     left: 10%;
                     .P1 {
@@ -295,11 +266,10 @@
                         left: 75%;
                         animation: PullToRight-S3-P3 500ms ease-in-out forwards 2s;
                     }
-    
                     .P4 {
                         left: 195%;
                         bottom: -50%;
-                        &::after{
+                        &::after {
                             visibility: hidden;
                             opacity: 0;
                             height: 0%;
@@ -309,7 +279,6 @@
                 }
             }
         }
-
         .Message {
             position: absolute;
             left: 2.5%;
@@ -318,26 +287,21 @@
             background-color: transparent;
             backdrop-filter: blur(75px) brightness(1);
             border-radius: 25px;
-            box-shadow: 0px 50px 50px rgba(0,0,0, 0.15);
-
+            box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: left;
-
             padding: 20px 50px;
-
-            h1, h3 {
+            h1,
+            h3 {
                 margin-bottom: 10px;
                 width: 100%;
             }
-
             h1 {
                 font-size: 50px;
             }
-
-
             .Buttons {
                 height: 40px;
                 width: 100%;
@@ -345,8 +309,8 @@
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 25px;
-
-                .GoBack, .GoHome{
+                .GoBack,
+                .GoHome {
                     position: relative;
                     width: 47.5%;
                     height: 100%;
@@ -354,39 +318,30 @@
                     outline: 2.5px solid #fff;
                     color: #F28D56;
                     font-weight: bold;
-
                     display: flex;
-                    justify-content:  center;
+                    justify-content: center;
                     align-items: center;
-
                     overflow: hidden;
-
                     $radius: 5px;
-
                     border-radius: $radius;
-                    &::before{
+                    &::before {
                         border-radius: $radius !important;
                     }
-
-                    &::after{
+                    &::after {
                         border-radius: $radius !important;
                     }
                 }
-
-                .GoBack{
+                .GoBack {
                     background-color: transparent;
                     outline: 2.5px solid #fff;
                     color: #fff;
                     transition: all 300ms ease-in-out;
-
-                    
                     &:hover {
                         color: $HomeHover !important;
                         outline: 2.5px solid $HomeHover;
                         cursor: pointer;
                     }
                 }
-
                 .GoHome {
                     background-color: transparent;
                     outline: 2.5px solid #fff;
@@ -399,7 +354,6 @@
                         transition: all 300ms ease-in-out;
                         z-index: -1;
                     }
-
                     &::after {
                         content: '';
                         position: absolute;
@@ -411,11 +365,10 @@
                         z-index: -1;
                         outline: 2.5px solid $HomeHover;
                     }
-
                     &:hover {
                         cursor: pointer;
                         outline: 2.5px solid $HomeHover;
-                        &::before{
+                        &::before {
                             background-color: $HomeHover;
                         }
                         &::after {
@@ -427,4 +380,3 @@
             }
         }
     }
-
