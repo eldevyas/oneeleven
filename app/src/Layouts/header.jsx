@@ -78,6 +78,7 @@ function ProfilePic() {
 	return (
         <img
             id='ProfilePicture'
+            referrerpolicy="no-referrer"
             src={
                 imgSrc == null
                     ? createImageFromInitials(500, user, getRandomColor())
@@ -262,10 +263,10 @@ function MobileComponent() {
 }
 
 const ResponsiveHeader = () => {
-    const [width, setWidth] = React.useState(window.innerWidth);
+    const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 990;
 
-    React.useEffect(() => {
+    useEffect(() => {
       window.addEventListener("resize", () => setWidth(window.innerWidth));
     }, []);
   

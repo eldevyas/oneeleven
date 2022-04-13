@@ -6,6 +6,12 @@ import Register from './Routes/Register'
 import { AuthProvider } from './Contexts/AuthContext'
 import PageNotFound from './Routes/404'
 import Users from './Routes/Users'
+
+
+
+
+
+
 function App() {
     return(
         <AuthProvider>
