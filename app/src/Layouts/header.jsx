@@ -8,6 +8,8 @@ import {auth} from '../firebase'
 import LogoIMG from '/src/assets/img/logo.png'
 import { Link } from 'react-router-dom';
 
+
+
 function Logo() {
     return (
       <img 
@@ -17,6 +19,8 @@ function Logo() {
       />
     );
 }
+
+
 
 function Menu() {
     let Visible = false;
