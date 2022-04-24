@@ -1,2 +1,2 @@
 # OneEleven-Generator
- Nothing yet to see here.
+ Front-end has been almost done,  will complete the back-end when I get more notions about Machine Learning and APIs.
