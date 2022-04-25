@@ -8,6 +8,8 @@ import {auth} from '../firebase'
 import LogoIMG from '/src/assets/img/logo.png'
 import { Link } from 'react-router-dom';
 
+
+
 function Logo() {
     return (
       <img 
@@ -17,6 +19,8 @@ function Logo() {
       />
     );
 }
+
+
 
 function Menu() {
     let Visible = false;
@@ -78,6 +82,7 @@ function ProfilePic() {
 	return (
         <img
             id='ProfilePicture'
+            referrerpolicy="no-referrer"
             src={
                 imgSrc == null
                     ? createImageFromInitials(500, user, getRandomColor())
@@ -262,10 +267,10 @@ function MobileComponent() {
 }
 
 const ResponsiveHeader = () => {
-    const [width, setWidth] = React.useState(window.innerWidth);
+    const [width, setWidth] = useState(window.innerWidth);
     const breakpoint = 990;
 
-    React.useEffect(() => {
+    useEffect(() => {
       window.addEventListener("resize", () => setWidth(window.innerWidth));
     }, []);
   
