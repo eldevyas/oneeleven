@@ -39,14 +39,11 @@ class Users extends Component {
 
     componentDidMount() {
         const fetchData = async () => {
-            fetch('')
+            const Result = fetch('http://localhost:3000/users');
         }
     }
 
-
-
     render() {
-
         return(
             <div className= 'UsersPage'>
                 <h1>List of users on MySQL Database:</h1>
